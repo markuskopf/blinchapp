@@ -1,8 +1,8 @@
 //
 //  AppDelegate.h
-//  Blinch
+//  Blunch
 //
-//  Created by Oberst Tanja on 15.11.14.
+//  Created by Oberst Tanja on 11.10.14.
 //  Copyright (c) 2014 Oberst Tanja. All rights reserved.
 //
 
