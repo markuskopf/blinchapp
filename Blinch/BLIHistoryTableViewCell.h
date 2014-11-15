@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BlunchHistoryTableViewCell : UITableViewCell
+@interface BLIHistoryTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *dayLabel;
 @property (weak, nonatomic) IBOutlet UILabel *monthLabel;

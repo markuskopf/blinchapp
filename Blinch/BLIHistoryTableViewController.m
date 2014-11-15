@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Oberst Tanja. All rights reserved.
 //
 
-#import "BlunchHistoryTableViewController.h"
+#import "BLIHistoryTableViewController.h"
 
-@interface BlunchHistoryTableViewController ()
+@interface BLIHistoryTableViewController ()
 
 @end
 
-@implementation BlunchHistoryTableViewController
+@implementation BLIHistoryTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -83,7 +83,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *blubber = [tableView dequeueReusableCellWithIdentifier:@"blunchHistoryTableViewCell" forIndexPath:indexPath];
-    BlunchHistoryTableViewCell *cell = (BlunchHistoryTableViewCell *) blubber;
+    BLIHistoryTableViewCell *cell = (BLIHistoryTableViewCell *) blubber;
     
     
     if (indexPath.section == 0) {

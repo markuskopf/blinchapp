@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Oberst Tanja. All rights reserved.
 //
 
-#import "BlunchPickerView.h"
+#import "BLIPickerView.h"
 
-@implementation BlunchPickerView
+@implementation BLIPickerView
 
 /*
 // Only override drawRect: if you perform custom drawing.

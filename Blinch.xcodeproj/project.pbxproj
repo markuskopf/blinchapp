@@ -11,14 +11,14 @@
 		AB586F8F1A173F8200E8D00E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB586F8E1A173F8200E8D00E /* Images.xcassets */; };
 		AB586F921A173F8200E8D00E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB586F901A173F8200E8D00E /* LaunchScreen.xib */; };
 		AB586F9E1A173F8300E8D00E /* BlinchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586F9D1A173F8300E8D00E /* BlinchTests.m */; };
-		AB586FAB1A17495100E8D00E /* BlunchHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586FA81A17495100E8D00E /* BlunchHistoryTableViewController.m */; };
-		AB586FAC1A17495100E8D00E /* BlunchHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586FAA1A17495100E8D00E /* BlunchHistoryTableViewCell.m */; };
+		AB586FAB1A17495100E8D00E /* BLIHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586FA81A17495100E8D00E /* BLIHistoryTableViewController.m */; };
+		AB586FAC1A17495100E8D00E /* BLIHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586FAA1A17495100E8D00E /* BLIHistoryTableViewCell.m */; };
 		AB586FAE1A1749E500E8D00E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB586FAD1A1749E500E8D00E /* Main.storyboard */; };
-		AB586FB91A174A3E00E8D00E /* BlunchRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586FB01A174A3E00E8D00E /* BlunchRegistrationViewController.m */; };
-		AB586FBA1A174A3E00E8D00E /* BlunchCheckInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586FB21A174A3E00E8D00E /* BlunchCheckInViewController.m */; };
-		AB586FBB1A174A3E00E8D00E /* BlunchDrawPartnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586FB41A174A3E00E8D00E /* BlunchDrawPartnerViewController.m */; };
-		AB586FBC1A174A3E00E8D00E /* BlunchPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586FB61A174A3E00E8D00E /* BlunchPickerView.m */; };
-		AB586FBD1A174A3E00E8D00E /* BlunchLotteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586FB81A174A3E00E8D00E /* BlunchLotteryViewController.m */; };
+		AB586FB91A174A3E00E8D00E /* BLIRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586FB01A174A3E00E8D00E /* BLIRegistrationViewController.m */; };
+		AB586FBA1A174A3E00E8D00E /* BLICheckInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586FB21A174A3E00E8D00E /* BLICheckInViewController.m */; };
+		AB586FBB1A174A3E00E8D00E /* BLIDrawPartnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586FB41A174A3E00E8D00E /* BLIDrawPartnerViewController.m */; };
+		AB586FBC1A174A3E00E8D00E /* BLIPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586FB61A174A3E00E8D00E /* BLIPickerView.m */; };
+		AB586FBD1A174A3E00E8D00E /* BLILotteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586FB81A174A3E00E8D00E /* BLILotteryViewController.m */; };
 		AB586FC01A174CD200E8D00E /* Blunch_Logo640w.png in Resources */ = {isa = PBXBuildFile; fileRef = AB586FBF1A174CD200E8D00E /* Blunch_Logo640w.png */; };
 		AB586FC61A17502200E8D00E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586FC51A17502200E8D00E /* AppDelegate.m */; };
 /* End PBXBuildFile section */
@@ -42,21 +42,21 @@
 		AB586F971A173F8200E8D00E /* BlinchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlinchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB586F9C1A173F8300E8D00E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB586F9D1A173F8300E8D00E /* BlinchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlinchTests.m; sourceTree = "<group>"; };
-		AB586FA71A17495100E8D00E /* BlunchHistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlunchHistoryTableViewController.h; sourceTree = "<group>"; };
-		AB586FA81A17495100E8D00E /* BlunchHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlunchHistoryTableViewController.m; sourceTree = "<group>"; };
-		AB586FA91A17495100E8D00E /* BlunchHistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlunchHistoryTableViewCell.h; sourceTree = "<group>"; };
-		AB586FAA1A17495100E8D00E /* BlunchHistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlunchHistoryTableViewCell.m; sourceTree = "<group>"; };
+		AB586FA71A17495100E8D00E /* BLIHistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLIHistoryTableViewController.h; sourceTree = "<group>"; };
+		AB586FA81A17495100E8D00E /* BLIHistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLIHistoryTableViewController.m; sourceTree = "<group>"; };
+		AB586FA91A17495100E8D00E /* BLIHistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLIHistoryTableViewCell.h; sourceTree = "<group>"; };
+		AB586FAA1A17495100E8D00E /* BLIHistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLIHistoryTableViewCell.m; sourceTree = "<group>"; };
 		AB586FAD1A1749E500E8D00E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		AB586FAF1A174A3E00E8D00E /* BlunchRegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlunchRegistrationViewController.h; sourceTree = "<group>"; };
-		AB586FB01A174A3E00E8D00E /* BlunchRegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlunchRegistrationViewController.m; sourceTree = "<group>"; };
-		AB586FB11A174A3E00E8D00E /* BlunchCheckInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlunchCheckInViewController.h; sourceTree = "<group>"; };
-		AB586FB21A174A3E00E8D00E /* BlunchCheckInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlunchCheckInViewController.m; sourceTree = "<group>"; };
-		AB586FB31A174A3E00E8D00E /* BlunchDrawPartnerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlunchDrawPartnerViewController.h; sourceTree = "<group>"; };
-		AB586FB41A174A3E00E8D00E /* BlunchDrawPartnerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlunchDrawPartnerViewController.m; sourceTree = "<group>"; };
-		AB586FB51A174A3E00E8D00E /* BlunchPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlunchPickerView.h; sourceTree = "<group>"; };
-		AB586FB61A174A3E00E8D00E /* BlunchPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlunchPickerView.m; sourceTree = "<group>"; };
-		AB586FB71A174A3E00E8D00E /* BlunchLotteryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlunchLotteryViewController.h; sourceTree = "<group>"; };
-		AB586FB81A174A3E00E8D00E /* BlunchLotteryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlunchLotteryViewController.m; sourceTree = "<group>"; };
+		AB586FAF1A174A3E00E8D00E /* BLIRegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLIRegistrationViewController.h; sourceTree = "<group>"; };
+		AB586FB01A174A3E00E8D00E /* BLIRegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLIRegistrationViewController.m; sourceTree = "<group>"; };
+		AB586FB11A174A3E00E8D00E /* BLICheckInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLICheckInViewController.h; sourceTree = "<group>"; };
+		AB586FB21A174A3E00E8D00E /* BLICheckInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLICheckInViewController.m; sourceTree = "<group>"; };
+		AB586FB31A174A3E00E8D00E /* BLIDrawPartnerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLIDrawPartnerViewController.h; sourceTree = "<group>"; };
+		AB586FB41A174A3E00E8D00E /* BLIDrawPartnerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLIDrawPartnerViewController.m; sourceTree = "<group>"; };
+		AB586FB51A174A3E00E8D00E /* BLIPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLIPickerView.h; sourceTree = "<group>"; };
+		AB586FB61A174A3E00E8D00E /* BLIPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLIPickerView.m; sourceTree = "<group>"; };
+		AB586FB71A174A3E00E8D00E /* BLILotteryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLILotteryViewController.h; sourceTree = "<group>"; };
+		AB586FB81A174A3E00E8D00E /* BLILotteryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLILotteryViewController.m; sourceTree = "<group>"; };
 		AB586FBF1A174CD200E8D00E /* Blunch_Logo640w.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blunch_Logo640w.png; sourceTree = "<group>"; };
 		AB586FC11A174CEB00E8D00E /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		AB586FC21A174CEB00E8D00E /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
@@ -105,21 +105,21 @@
 			children = (
 				AB586FC41A17502200E8D00E /* AppDelegate.h */,
 				AB586FC51A17502200E8D00E /* AppDelegate.m */,
-				AB586FAF1A174A3E00E8D00E /* BlunchRegistrationViewController.h */,
-				AB586FB01A174A3E00E8D00E /* BlunchRegistrationViewController.m */,
-				AB586FB11A174A3E00E8D00E /* BlunchCheckInViewController.h */,
-				AB586FB21A174A3E00E8D00E /* BlunchCheckInViewController.m */,
-				AB586FB31A174A3E00E8D00E /* BlunchDrawPartnerViewController.h */,
-				AB586FB41A174A3E00E8D00E /* BlunchDrawPartnerViewController.m */,
-				AB586FB51A174A3E00E8D00E /* BlunchPickerView.h */,
-				AB586FB61A174A3E00E8D00E /* BlunchPickerView.m */,
-				AB586FB71A174A3E00E8D00E /* BlunchLotteryViewController.h */,
-				AB586FB81A174A3E00E8D00E /* BlunchLotteryViewController.m */,
+				AB586FAF1A174A3E00E8D00E /* BLIRegistrationViewController.h */,
+				AB586FB01A174A3E00E8D00E /* BLIRegistrationViewController.m */,
+				AB586FB11A174A3E00E8D00E /* BLICheckInViewController.h */,
+				AB586FB21A174A3E00E8D00E /* BLICheckInViewController.m */,
+				AB586FB31A174A3E00E8D00E /* BLIDrawPartnerViewController.h */,
+				AB586FB41A174A3E00E8D00E /* BLIDrawPartnerViewController.m */,
+				AB586FB51A174A3E00E8D00E /* BLIPickerView.h */,
+				AB586FB61A174A3E00E8D00E /* BLIPickerView.m */,
+				AB586FB71A174A3E00E8D00E /* BLILotteryViewController.h */,
+				AB586FB81A174A3E00E8D00E /* BLILotteryViewController.m */,
 				AB586FAD1A1749E500E8D00E /* Main.storyboard */,
-				AB586FA71A17495100E8D00E /* BlunchHistoryTableViewController.h */,
-				AB586FA81A17495100E8D00E /* BlunchHistoryTableViewController.m */,
-				AB586FA91A17495100E8D00E /* BlunchHistoryTableViewCell.h */,
-				AB586FAA1A17495100E8D00E /* BlunchHistoryTableViewCell.m */,
+				AB586FA71A17495100E8D00E /* BLIHistoryTableViewController.h */,
+				AB586FA81A17495100E8D00E /* BLIHistoryTableViewController.m */,
+				AB586FA91A17495100E8D00E /* BLIHistoryTableViewCell.h */,
+				AB586FAA1A17495100E8D00E /* BLIHistoryTableViewCell.m */,
 				AB586F8E1A173F8200E8D00E /* Images.xcassets */,
 				AB586F901A173F8200E8D00E /* LaunchScreen.xib */,
 				AB586FBE1A174A7D00E8D00E /* Ressource */,
@@ -273,15 +273,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB586FAC1A17495100E8D00E /* BlunchHistoryTableViewCell.m in Sources */,
-				AB586FBC1A174A3E00E8D00E /* BlunchPickerView.m in Sources */,
+				AB586FAC1A17495100E8D00E /* BLIHistoryTableViewCell.m in Sources */,
+				AB586FBC1A174A3E00E8D00E /* BLIPickerView.m in Sources */,
 				AB586FC61A17502200E8D00E /* AppDelegate.m in Sources */,
-				AB586FBA1A174A3E00E8D00E /* BlunchCheckInViewController.m in Sources */,
-				AB586FAB1A17495100E8D00E /* BlunchHistoryTableViewController.m in Sources */,
-				AB586FBD1A174A3E00E8D00E /* BlunchLotteryViewController.m in Sources */,
-				AB586FBB1A174A3E00E8D00E /* BlunchDrawPartnerViewController.m in Sources */,
+				AB586FBA1A174A3E00E8D00E /* BLICheckInViewController.m in Sources */,
+				AB586FAB1A17495100E8D00E /* BLIHistoryTableViewController.m in Sources */,
+				AB586FBD1A174A3E00E8D00E /* BLILotteryViewController.m in Sources */,
+				AB586FBB1A174A3E00E8D00E /* BLIDrawPartnerViewController.m in Sources */,
 				AB586F841A173F8200E8D00E /* main.m in Sources */,
-				AB586FB91A174A3E00E8D00E /* BlunchRegistrationViewController.m in Sources */,
+				AB586FB91A174A3E00E8D00E /* BLIRegistrationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

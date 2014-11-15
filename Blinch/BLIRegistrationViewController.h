@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BlunchRegistrationViewController : UIViewController <UITextFieldDelegate>
+@interface BLIRegistrationViewController : UIViewController <UITextFieldDelegate>
 
 @end

@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Oberst Tanja. All rights reserved.
 //
 
-#import "BlunchLotteryViewController.h"
+#import "BLILotteryViewController.h"
 #import <MessageUI/MessageUI.h>
 
-@interface BlunchLotteryViewController ()
+@interface BLILotteryViewController ()
 
 @property (strong, nonatomic) NSArray *blunchNames;
 @property (strong, nonatomic) NSDictionary  *myData;
@@ -24,7 +24,7 @@
 @end
 
 
-@implementation BlunchLotteryViewController
+@implementation BLILotteryViewController
 
 - (IBAction)showEmail:(id)sender {
     // Email Subject

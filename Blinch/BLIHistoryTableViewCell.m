@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Oberst Tanja. All rights reserved.
 //
 
-#import "BlunchHistoryTableViewCell.h"
+#import "BLIHistoryTableViewCell.h"
 
-@implementation BlunchHistoryTableViewCell
+@implementation BLIHistoryTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code

@@ -6,15 +6,15 @@
 //  Copyright (c) 2014 Oberst Tanja. All rights reserved.
 //
 
-#import "BlunchCheckInViewController.h"
+#import "BLICheckInViewController.h"
 
-@interface BlunchCheckInViewController ()
+@interface BLICheckInViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *checkInYesButton;
 @property (weak, nonatomic) IBOutlet UIButton *checkInNoButton;
 
 @end
 
-@implementation BlunchCheckInViewController
+@implementation BLICheckInViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

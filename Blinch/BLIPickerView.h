@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BlunchPickerView : UIPickerView
+@interface BLIPickerView : UIPickerView
 
 @end

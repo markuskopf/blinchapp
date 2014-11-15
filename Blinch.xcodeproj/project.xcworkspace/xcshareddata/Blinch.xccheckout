@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4D92CA60-BC04-493C-AC98-A2D183AE3053</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Blinch</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E4D8271E00500CE93B51659F864F346FE6F7B38C</key>
+		<string>github.com:markuskopf/blinchapp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Blinch.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E4D8271E00500CE93B51659F864F346FE6F7B38C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:markuskopf/blinchapp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E4D8271E00500CE93B51659F864F346FE6F7B38C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E4D8271E00500CE93B51659F864F346FE6F7B38C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>blinchapp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BlunchCheckInViewController : UIViewController
+@interface BLICheckInViewController : UIViewController
 
 @end

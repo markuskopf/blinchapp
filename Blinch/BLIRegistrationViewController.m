@@ -6,16 +6,16 @@
 //  Copyright (c) 2014 Oberst Tanja. All rights reserved.
 //
 
-#import "BlunchRegistrationViewController.h"
+#import "BLIRegistrationViewController.h"
 
-@interface BlunchRegistrationViewController ()
+@interface BLIRegistrationViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *sendRegistrationDetailsButton;
 @property (weak, nonatomic) IBOutlet UITextField *registrationEmailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *registrationNameTextField;
 
 @end
 
-@implementation BlunchRegistrationViewController
+@implementation BLIRegistrationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BlunchDrawPartnerViewController : UIViewController
+@interface BLIDrawPartnerViewController : UIViewController
 
 @end

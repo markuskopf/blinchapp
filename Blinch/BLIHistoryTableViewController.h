@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BlunchHistoryTableViewCell.h"
+#import "BLIHistoryTableViewCell.h"
 
-@interface BlunchHistoryTableViewController : UITableViewController <UITableViewDataSource,UITableViewDelegate>
+@interface BLIHistoryTableViewController : UITableViewController <UITableViewDataSource,UITableViewDelegate>
 
 
 @end

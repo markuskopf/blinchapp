@@ -6,14 +6,14 @@
 //  Copyright (c) 2014 Oberst Tanja. All rights reserved.
 //
 
-#import "BlunchDrawPartnerViewController.h"
+#import "BLIDrawPartnerViewController.h"
 
-@interface BlunchDrawPartnerViewController ()
+@interface BLIDrawPartnerViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *drawPartnerButton;
 
 @end
 
-@implementation BlunchDrawPartnerViewController
+@implementation BLIDrawPartnerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
