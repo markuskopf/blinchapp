@@ -96,15 +96,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Would you like to check in for Blunch today?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zu1-Xh-MMA">
-                                <rect key="frame" x="63" y="158" width="300" height="135"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="135" id="2xm-KM-pJ7"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="29"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFT-kh-Uc2">
                                 <rect key="frame" x="36" y="422" width="528" height="50"/>
                                 <color key="backgroundColor" red="0.38381044710000001" green="0.35786382300000003" blue="0.62602645990000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -130,6 +121,15 @@
                                     <segue destination="ZgV-ND-BLB" kind="show" id="mUI-Sh-wVf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Would you like to check in for Blunch today?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zu1-Xh-MMA">
+                                <rect key="frame" x="36" y="158" width="528" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="2xm-KM-pJ7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="29"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.1508895985" green="0.74789005470000003" blue="0.41574475360000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -142,7 +142,7 @@
                             <constraint firstItem="LWT-x4-dgJ" firstAttribute="top" secondItem="jFT-kh-Uc2" secondAttribute="bottom" constant="15" id="Rs4-PH-lwA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zu1-Xh-MMA" secondAttribute="trailing" constant="20" id="VWl-2A-XAn"/>
                             <constraint firstItem="jFT-kh-Uc2" firstAttribute="width" secondItem="LWT-x4-dgJ" secondAttribute="width" id="XC8-T4-lEH"/>
-                            <constraint firstItem="zu1-Xh-MMA" firstAttribute="top" relation="lessThanOrEqual" secondItem="f04-GF-a1Y" secondAttribute="bottom" constant="90" id="XHG-Zh-q6R"/>
+                            <constraint firstItem="zu1-Xh-MMA" firstAttribute="top" relation="lessThanOrEqual" secondItem="f04-GF-a1Y" secondAttribute="bottom" constant="40" id="XHG-Zh-q6R"/>
                             <constraint firstItem="jFT-kh-Uc2" firstAttribute="leading" secondItem="hik-gl-a3U" secondAttribute="leadingMargin" constant="20" id="apB-oW-HbG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LWT-x4-dgJ" secondAttribute="trailing" constant="20" id="caA-aV-0DC"/>
                         </constraints>
@@ -151,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hlz-dA-Fma" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3579" y="1001.9999999999998"/>
+            <point key="canvasLocation" x="3579" y="1001"/>
         </scene>
         <!--Draw partner-->
         <scene sceneID="eM6-bV-Soh">
@@ -173,7 +173,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bn8-ui-hMY">
-                                <rect key="frame" x="42" y="266" width="320" height="172"/>
+                                <rect key="frame" x="42" y="266" width="522" height="172"/>
                                 <string key="text">From 11am you can draw your partner here:
 </string>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="29"/>
@@ -181,7 +181,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33V-hX-x7E">
-                                <rect key="frame" x="40" y="503" width="320" height="50"/>
+                                <rect key="frame" x="42" y="503" width="522" height="50"/>
                                 <color key="backgroundColor" red="0.38381044710000001" green="0.35786382300000003" blue="0.62602645990000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="24"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -214,7 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hlh-7c-8OB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4275" y="1001.9999999999998"/>
+            <point key="canvasLocation" x="4275" y="1001"/>
         </scene>
         <!--Lottery-->
         <scene sceneID="rhw-6r-8pP">
@@ -295,17 +295,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How can future blunch partners reach you?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vy2-FI-UOc">
-                                <rect key="frame" x="36" y="104" width="520" height="237"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="How can future blunch partners reach you?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vy2-FI-UOc">
+                                <rect key="frame" x="50" y="104" width="491" height="237"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="237" id="mhu-8p-uTE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="mhu-8p-uTE"/>
+                                    </mask>
+                                </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="IRq-3V-3rn">
-                                <rect key="frame" x="36" y="342" width="320" height="50"/>
+                                <rect key="frame" x="118" y="342" width="360" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="P0Y-7S-s7f"/>
                                 </constraints>
@@ -315,19 +320,8 @@
                                     <outlet property="delegate" destination="Van-Vk-cAZ" id="6YR-4H-rAM"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your mobile email adress" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9MH-a4-r64">
-                                <rect key="frame" x="36" y="410" width="320" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="HvD-TS-6RO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
-                                <connections>
-                                    <outlet property="delegate" destination="Van-Vk-cAZ" id="yPu-g7-gvw"/>
-                                </connections>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ig2-6k-9WU">
-                                <rect key="frame" x="36" y="530" width="318" height="50"/>
+                                <rect key="frame" x="119" y="530" width="360" height="50"/>
                                 <color key="backgroundColor" red="0.38381044710000001" green="0.35786382300000003" blue="0.62602645990000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="29"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -338,23 +332,47 @@
                                     <segue destination="eaB-Ai-iTc" kind="show" id="fG6-1Q-Cpd"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your mobile email adress" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9MH-a4-r64">
+                                <rect key="frame" x="119" y="409" width="360" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HvD-TS-6RO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Van-Vk-cAZ" id="yPu-g7-gvw"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.1082915146" green="0.74789005470000003" blue="0.41574475360000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="IRq-3V-3rn" firstAttribute="width" secondItem="9MH-a4-r64" secondAttribute="width" id="5qE-fk-IIR"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Vy2-FI-UOc" secondAttribute="trailing" constant="28" id="Ezu-2S-a61"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Vy2-FI-UOc" secondAttribute="trailing" constant="20" id="Ezu-2S-a61"/>
                             <constraint firstItem="9MH-a4-r64" firstAttribute="top" secondItem="IRq-3V-3rn" secondAttribute="bottom" constant="12" id="FOp-B8-9Lc"/>
                             <constraint firstItem="IRq-3V-3rn" firstAttribute="width" secondItem="9MH-a4-r64" secondAttribute="width" id="JlU-Rl-Xz0"/>
+                            <constraint firstItem="WQl-Zg-ih0" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Ig2-6k-9WU" secondAttribute="bottom" constant="20" id="Okv-Me-0hw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ig2-6k-9WU" secondAttribute="trailing" constant="20" id="QPj-56-Dbd"/>
                             <constraint firstAttribute="centerX" secondItem="IRq-3V-3rn" secondAttribute="centerX" id="Rzm-tm-Fcd"/>
-                            <constraint firstItem="Vy2-FI-UOc" firstAttribute="leading" secondItem="tBm-al-J8f" secondAttribute="leadingMargin" constant="20" id="SVh-ve-8wu"/>
+                            <constraint firstItem="Vy2-FI-UOc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tBm-al-J8f" secondAttribute="leadingMargin" constant="20" id="SVh-ve-8wu"/>
+                            <constraint firstItem="Vy2-FI-UOc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tBm-al-J8f" secondAttribute="leadingMargin" constant="20" id="Wa9-JG-6oA"/>
+                            <constraint firstItem="Ig2-6k-9WU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="9MH-a4-r64" secondAttribute="bottom" constant="16" id="fRV-dp-Boe"/>
                             <constraint firstItem="IRq-3V-3rn" firstAttribute="width" secondItem="Ig2-6k-9WU" secondAttribute="width" id="g9m-03-WtB"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="Vy2-FI-UOc" secondAttribute="trailing" constant="20" id="iXK-nG-G44"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9MH-a4-r64" secondAttribute="trailing" constant="20" id="k4F-VT-ukF"/>
+                            <constraint firstAttribute="centerX" secondItem="Vy2-FI-UOc" secondAttribute="centerX" id="lPe-Bu-MhH"/>
                             <constraint firstItem="9MH-a4-r64" firstAttribute="leading" secondItem="tBm-al-J8f" secondAttribute="leadingMargin" constant="20" id="lze-32-AVe"/>
-                            <constraint firstItem="Vy2-FI-UOc" firstAttribute="top" secondItem="hD6-Jo-hBw" secondAttribute="bottom" constant="40" id="pHV-L3-1Z8"/>
+                            <constraint firstItem="Vy2-FI-UOc" firstAttribute="top" relation="lessThanOrEqual" secondItem="hD6-Jo-hBw" secondAttribute="bottom" constant="40" id="pHV-L3-1Z8"/>
                             <constraint firstItem="Ig2-6k-9WU" firstAttribute="top" secondItem="9MH-a4-r64" secondAttribute="bottom" constant="12" id="sAi-sa-FOP"/>
-                            <constraint firstItem="IRq-3V-3rn" firstAttribute="top" relation="lessThanOrEqual" secondItem="Vy2-FI-UOc" secondAttribute="bottom" constant="60" id="z3b-bb-e3k"/>
+                            <constraint firstItem="IRq-3V-3rn" firstAttribute="top" relation="lessThanOrEqual" secondItem="Vy2-FI-UOc" secondAttribute="bottom" constant="40" id="z3b-bb-e3k"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ezu-2S-a61"/>
+                                <exclude reference="SVh-ve-8wu"/>
+                                <exclude reference="sAi-sa-FOP"/>
+                                <exclude reference="Okv-Me-0hw"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Registration" id="DLD-nj-qVa"/>
                     <connections>
@@ -364,7 +382,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="No6-Rr-EoE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2914.5" y="1001.9999999999998"/>
+            <point key="canvasLocation" x="2914" y="1001"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="L8L-nv-TCX">
