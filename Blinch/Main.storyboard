@@ -133,19 +133,34 @@
                         </subviews>
                         <color key="backgroundColor" red="0.1508895985" green="0.74789005470000003" blue="0.41574475360000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="jFT-kh-Uc2" firstAttribute="top" relation="greaterThanOrEqual" secondItem="zu1-Xh-MMA" secondAttribute="bottom" constant="1" id="008-I6-8sN"/>
                             <constraint firstItem="jFT-kh-Uc2" firstAttribute="height" secondItem="LWT-x4-dgJ" secondAttribute="height" id="1a5-yc-cJG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jFT-kh-Uc2" secondAttribute="trailing" constant="20" id="3ld-WT-rtw"/>
                             <constraint firstItem="LWT-x4-dgJ" firstAttribute="leading" secondItem="hik-gl-a3U" secondAttribute="leadingMargin" constant="20" id="3px-bE-nC2"/>
-                            <constraint firstItem="jFT-kh-Uc2" firstAttribute="top" secondItem="zu1-Xh-MMA" secondAttribute="bottom" constant="100" id="DEh-jW-nck"/>
+                            <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="LWT-x4-dgJ" secondAttribute="bottom" constant="30" id="6Gp-my-0qC"/>
+                            <constraint firstItem="jFT-kh-Uc2" firstAttribute="top" relation="greaterThanOrEqual" secondItem="zu1-Xh-MMA" secondAttribute="bottom" constant="20" id="DEh-jW-nck"/>
                             <constraint firstAttribute="centerX" secondItem="jFT-kh-Uc2" secondAttribute="centerX" id="GKc-Lh-dwR"/>
-                            <constraint firstItem="zu1-Xh-MMA" firstAttribute="leading" secondItem="hik-gl-a3U" secondAttribute="leadingMargin" constant="20" id="RKI-VL-VvT"/>
+                            <constraint firstItem="LWT-x4-dgJ" firstAttribute="top" secondItem="jFT-kh-Uc2" secondAttribute="bottom" constant="16" id="Hze-n7-riC"/>
+                            <constraint firstItem="zu1-Xh-MMA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hik-gl-a3U" secondAttribute="leadingMargin" constant="10" id="RKI-VL-VvT"/>
                             <constraint firstItem="LWT-x4-dgJ" firstAttribute="top" secondItem="jFT-kh-Uc2" secondAttribute="bottom" constant="15" id="Rs4-PH-lwA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zu1-Xh-MMA" secondAttribute="trailing" constant="20" id="VWl-2A-XAn"/>
+                            <constraint firstAttribute="centerY" secondItem="zu1-Xh-MMA" secondAttribute="centerY" id="UbC-yY-peJ"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="zu1-Xh-MMA" secondAttribute="trailing" constant="10" id="VWl-2A-XAn"/>
                             <constraint firstItem="jFT-kh-Uc2" firstAttribute="width" secondItem="LWT-x4-dgJ" secondAttribute="width" id="XC8-T4-lEH"/>
-                            <constraint firstItem="zu1-Xh-MMA" firstAttribute="top" relation="lessThanOrEqual" secondItem="f04-GF-a1Y" secondAttribute="bottom" constant="40" id="XHG-Zh-q6R"/>
+                            <constraint firstItem="zu1-Xh-MMA" firstAttribute="top" relation="greaterThanOrEqual" secondItem="f04-GF-a1Y" secondAttribute="bottom" priority="250" constant="1" id="XHG-Zh-q6R"/>
                             <constraint firstItem="jFT-kh-Uc2" firstAttribute="leading" secondItem="hik-gl-a3U" secondAttribute="leadingMargin" constant="20" id="apB-oW-HbG"/>
+                            <constraint firstAttribute="centerX" secondItem="zu1-Xh-MMA" secondAttribute="centerX" id="c9s-RA-OmD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LWT-x4-dgJ" secondAttribute="trailing" constant="20" id="caA-aV-0DC"/>
+                            <constraint firstAttribute="centerX" secondItem="zu1-Xh-MMA" secondAttribute="centerX" id="zm6-V1-Rml"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UbC-yY-peJ"/>
+                                <exclude reference="c9s-RA-OmD"/>
+                                <exclude reference="008-I6-8sN"/>
+                                <exclude reference="DEh-jW-nck"/>
+                                <exclude reference="Rs4-PH-lwA"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Check in" id="t9v-DH-n1e"/>
                 </viewController>
