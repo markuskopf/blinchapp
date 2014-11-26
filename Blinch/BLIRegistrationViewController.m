@@ -13,6 +13,11 @@
 @property (weak, nonatomic) IBOutlet UITextField *registrationEmailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *registrationNameTextField;
 
+
+
+// action section
+- (IBAction)serverTestPressed:(id)sender;
+
 @end
 
 @implementation BLIRegistrationViewController
@@ -132,5 +137,21 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)serverTestPressed:(id)sender {
+    NSString *blinchURL = @"http://localhost:8080/ping";
+    
+    NSURLSession *session = [NSURLSession sharedSession];
+    [[session dataTaskWithURL:[NSURL URLWithString:blinchURL] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                // handle response
+        
+       NSString *responseString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+       NSString *bla = [NSString stringWithFormat:@"Response: %@", responseString];
+       NSLog(bla);
+        
+        
+    }] resume];
+}
+
 
 @end

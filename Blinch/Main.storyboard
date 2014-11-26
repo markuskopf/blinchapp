@@ -396,6 +396,16 @@
                                     <outlet property="delegate" destination="Van-Vk-cAZ" id="yPu-g7-gvw"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlh-Aj-HqH">
+                                <rect key="frame" x="262" y="112" width="77" height="30"/>
+                                <state key="normal" title="Server Test">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="serverTestPressed:" destination="Van-Vk-cAZ" eventType="touchUpInside" id="80G-vg-8lu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1082915146" green="0.74789005470000003" blue="0.41574475360000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -435,7 +445,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="No6-Rr-EoE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2914" y="1001"/>
+            <point key="canvasLocation" x="2826" y="1001"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="L8L-nv-TCX">
@@ -457,6 +467,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3gf-jt-ksf"/>
+        <segue reference="mUI-Sh-wVf"/>
     </inferredMetricsTieBreakers>
 </document>
