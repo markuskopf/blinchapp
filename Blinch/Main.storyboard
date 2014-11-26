@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nk2-lr-EVk">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -44,18 +43,27 @@
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
+                                            <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="28" y="51" width="52" height="21"/>
+                                            </variation>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" misplaced="YES" text="NAMEklkkjhgh" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="NbH-VW-r8E">
                                             <rect key="frame" x="119" y="8" width="253" height="64"/>
                                             <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="52"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
+                                            <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="110" y="8" width="262" height="61"/>
+                                            </variation>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qk-eE-zW5">
                                             <rect key="frame" x="28" y="5" width="61" height="52"/>
                                             <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="42"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
+                                            <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                <rect key="frame" x="28" y="5" width="52" height="49"/>
+                                            </variation>
                                         </label>
                                     </subviews>
                                     <constraints>
@@ -104,6 +112,9 @@
                                 <state key="normal" title="Yes!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="36" y="422" width="328" height="50"/>
+                                </variation>
                                 <connections>
                                     <segue destination="8pL-Tz-z1I" kind="show" id="Jbn-TJ-iDm"/>
                                 </connections>
@@ -117,6 +128,9 @@
                                     <color key="titleColor" red="0.41176470590000003" green="0.41176470590000003" blue="0.41176470590000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="36" y="485" width="328" height="50"/>
+                                </variation>
                                 <connections>
                                     <segue destination="ZgV-ND-BLB" kind="show" id="mUI-Sh-wVf"/>
                                 </connections>
@@ -180,15 +194,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are checked in. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8D-FM-j52">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="You are checked in. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8D-FM-j52">
                                 <rect key="frame" x="36" y="154" width="528" height="37"/>
                                 <color key="tintColor" red="0.069425941379098577" green="0.48078762755102045" blue="0.27297309783694684" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="30"/>
                                 <color key="textColor" red="0.069425941379999995" green="0.48078762759999999" blue="0.27297309780000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="36" y="154" width="328" height="35"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bn8-ui-hMY">
-                                <rect key="frame" x="42" y="266" width="522" height="172"/>
+                                <rect key="frame" x="42" y="266" width="522" height="100"/>
                                 <string key="text">From 11am you can draw your partner here:
 </string>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="29"/>
@@ -212,14 +229,13 @@
                         <color key="backgroundColor" red="0.1508895985" green="0.74789005470000003" blue="0.41574475360000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="33V-hX-x7E" secondAttribute="trailing" constant="24" id="BUQ-zx-awE"/>
-                            <constraint firstItem="33V-hX-x7E" firstAttribute="top" relation="lessThanOrEqual" secondItem="bn8-ui-hMY" secondAttribute="bottom" constant="40" id="Gvc-ha-xtv"/>
+                            <constraint firstItem="33V-hX-x7E" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bn8-ui-hMY" secondAttribute="bottom" constant="20" id="Gvc-ha-xtv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bn8-ui-hMY" secondAttribute="trailing" constant="20" id="LpD-Je-m2p"/>
-                            <constraint firstItem="o8D-FM-j52" firstAttribute="top" secondItem="UuT-wm-sh1" secondAttribute="bottom" constant="90" id="MiJ-Mt-vvf"/>
+                            <constraint firstItem="o8D-FM-j52" firstAttribute="top" relation="greaterThanOrEqual" secondItem="UuT-wm-sh1" secondAttribute="bottom" constant="30" id="MiJ-Mt-vvf"/>
                             <constraint firstItem="bn8-ui-hMY" firstAttribute="leading" secondItem="UST-fT-vCX" secondAttribute="leadingMargin" constant="20" id="Ng9-77-z6w"/>
-                            <constraint firstItem="o8D-FM-j52" firstAttribute="leading" secondItem="UST-fT-vCX" secondAttribute="leadingMargin" constant="20" id="aYZ-cE-X1n"/>
                             <constraint firstItem="33V-hX-x7E" firstAttribute="leading" secondItem="UST-fT-vCX" secondAttribute="leadingMargin" constant="20" id="biB-lH-idl"/>
-                            <constraint firstItem="bn8-ui-hMY" firstAttribute="top" relation="lessThanOrEqual" secondItem="o8D-FM-j52" secondAttribute="bottom" constant="90" id="cuP-Ia-REX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="o8D-FM-j52" secondAttribute="trailing" constant="20" id="wZu-03-hxC"/>
+                            <constraint firstItem="bn8-ui-hMY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="o8D-FM-j52" secondAttribute="bottom" priority="250" constant="1" id="cuP-Ia-REX"/>
+                            <constraint firstAttribute="centerX" secondItem="o8D-FM-j52" secondAttribute="centerX" id="ful-PI-5Na"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Draw partner" id="seb-GX-n6b"/>
@@ -243,8 +259,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTv-1n-XGB">
+                            <pickerView userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KTv-1n-XGB">
                                 <rect key="frame" x="36" y="251" width="528" height="162"/>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="36" y="284" width="328" height="162"/>
+                                </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="wBc-cG-VCW" id="GhO-GR-yce"/>
                                     <outlet property="delegate" destination="wBc-cG-VCW" id="fG7-jJ-YSb"/>
@@ -258,15 +277,21 @@
                                 <state key="normal" title="Suggest location">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="26" y="489" width="348" height="50"/>
+                                </variation>
                                 <connections>
                                     <action selector="showEmail:" destination="wBc-cG-VCW" eventType="touchUpInside" id="e8Q-Ci-wvY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will blunch together with" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shH-Rp-E3a">
-                                <rect key="frame" x="36" y="154" width="528" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="You will blunch together with" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shH-Rp-E3a">
+                                <rect key="frame" x="78" y="84" width="445" height="90"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="36" y="154" width="328" height="70"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="email segue | randomizer | confirmation screen &quot;check inbox&quot;" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qi8-mf-LNw">
                                 <rect key="frame" x="36" y="771" width="469" height="21"/>
@@ -277,15 +302,15 @@
                         </subviews>
                         <color key="backgroundColor" red="0.1082915146" green="0.74789005470000003" blue="0.41574475360000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="KTv-1n-XGB" firstAttribute="top" secondItem="shH-Rp-E3a" secondAttribute="bottom" constant="60" id="QeZ-u2-GRa"/>
-                            <constraint firstItem="shH-Rp-E3a" firstAttribute="top" secondItem="MXk-bK-S5i" secondAttribute="bottom" constant="90" id="Qx4-XZ-Pi6"/>
+                            <constraint firstItem="KTv-1n-XGB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="shH-Rp-E3a" secondAttribute="bottom" constant="1" id="Gob-SR-EGD"/>
+                            <constraint firstItem="shH-Rp-E3a" firstAttribute="top" relation="greaterThanOrEqual" secondItem="MXk-bK-S5i" secondAttribute="bottom" constant="20" id="Qx4-XZ-Pi6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KTv-1n-XGB" secondAttribute="trailing" constant="20" id="RA3-ly-JEA"/>
+                            <constraint firstItem="shH-Rp-E3a" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Cgi-ps-p2G" secondAttribute="leadingMargin" constant="10" id="XTO-0R-uyc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0Xm-Yi-t1T" secondAttribute="trailing" constant="10" id="aYY-6F-cAH"/>
                             <constraint firstItem="0Xm-Yi-t1T" firstAttribute="leading" secondItem="Cgi-ps-p2G" secondAttribute="leadingMargin" constant="10" id="b3j-wK-fY8"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="shH-Rp-E3a" secondAttribute="trailing" constant="20" id="b6e-kb-aeo"/>
-                            <constraint firstItem="0Xm-Yi-t1T" firstAttribute="top" relation="lessThanOrEqual" secondItem="KTv-1n-XGB" secondAttribute="bottom" constant="40" id="b9h-rg-UNZ"/>
                             <constraint firstItem="KTv-1n-XGB" firstAttribute="leading" secondItem="Cgi-ps-p2G" secondAttribute="leadingMargin" constant="20" id="gAI-5i-P3Y"/>
-                            <constraint firstItem="shH-Rp-E3a" firstAttribute="leading" secondItem="Cgi-ps-p2G" secondAttribute="leadingMargin" constant="20" id="hcR-4y-iSx"/>
+                            <constraint firstItem="0Xm-Yi-t1T" firstAttribute="top" secondItem="KTv-1n-XGB" secondAttribute="bottom" constant="1" id="iZb-gm-Vla"/>
+                            <constraint firstAttribute="centerX" secondItem="shH-Rp-E3a" secondAttribute="centerX" id="l0j-P4-lj2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Lottery" id="Vz1-O3-fEb"/>
@@ -296,7 +321,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zHU-5O-AER" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4954.5" y="1001.9999999999998"/>
+            <point key="canvasLocation" x="4954" y="1001"/>
         </scene>
         <!--Registration-->
         <scene sceneID="TKo-EC-Wa5">
