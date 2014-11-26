@@ -234,9 +234,15 @@
                             <constraint firstItem="o8D-FM-j52" firstAttribute="top" relation="greaterThanOrEqual" secondItem="UuT-wm-sh1" secondAttribute="bottom" constant="30" id="MiJ-Mt-vvf"/>
                             <constraint firstItem="bn8-ui-hMY" firstAttribute="leading" secondItem="UST-fT-vCX" secondAttribute="leadingMargin" constant="20" id="Ng9-77-z6w"/>
                             <constraint firstItem="33V-hX-x7E" firstAttribute="leading" secondItem="UST-fT-vCX" secondAttribute="leadingMargin" constant="20" id="biB-lH-idl"/>
-                            <constraint firstItem="bn8-ui-hMY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="o8D-FM-j52" secondAttribute="bottom" priority="250" constant="1" id="cuP-Ia-REX"/>
+                            <constraint firstItem="bn8-ui-hMY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="o8D-FM-j52" secondAttribute="bottom" constant="1" id="cuP-Ia-REX"/>
+                            <constraint firstItem="Hwi-Vs-6FQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="33V-hX-x7E" secondAttribute="bottom" priority="250" constant="30" id="fJI-wM-wVJ"/>
                             <constraint firstAttribute="centerX" secondItem="o8D-FM-j52" secondAttribute="centerX" id="ful-PI-5Na"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Gvc-ha-xtv"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Draw partner" id="seb-GX-n6b"/>
                     <connections>
@@ -285,7 +291,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="You will blunch together with" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shH-Rp-E3a">
-                                <rect key="frame" x="78" y="84" width="445" height="90"/>
+                                <rect key="frame" x="78" y="84" width="445" height="60"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -302,16 +308,23 @@
                         </subviews>
                         <color key="backgroundColor" red="0.1082915146" green="0.74789005470000003" blue="0.41574475360000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="KTv-1n-XGB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="shH-Rp-E3a" secondAttribute="bottom" constant="1" id="Gob-SR-EGD"/>
-                            <constraint firstItem="shH-Rp-E3a" firstAttribute="top" relation="greaterThanOrEqual" secondItem="MXk-bK-S5i" secondAttribute="bottom" constant="20" id="Qx4-XZ-Pi6"/>
+                            <constraint firstItem="KTv-1n-XGB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="shH-Rp-E3a" secondAttribute="bottom" constant="-10" id="Gob-SR-EGD"/>
+                            <constraint firstItem="shH-Rp-E3a" firstAttribute="top" relation="greaterThanOrEqual" secondItem="MXk-bK-S5i" secondAttribute="bottom" priority="250" id="Qx4-XZ-Pi6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KTv-1n-XGB" secondAttribute="trailing" constant="20" id="RA3-ly-JEA"/>
+                            <constraint firstItem="0Xm-Yi-t1T" firstAttribute="top" secondItem="KTv-1n-XGB" secondAttribute="bottom" constant="-10" id="WJI-El-btG"/>
                             <constraint firstItem="shH-Rp-E3a" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Cgi-ps-p2G" secondAttribute="leadingMargin" constant="10" id="XTO-0R-uyc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0Xm-Yi-t1T" secondAttribute="trailing" constant="10" id="aYY-6F-cAH"/>
                             <constraint firstItem="0Xm-Yi-t1T" firstAttribute="leading" secondItem="Cgi-ps-p2G" secondAttribute="leadingMargin" constant="10" id="b3j-wK-fY8"/>
                             <constraint firstItem="KTv-1n-XGB" firstAttribute="leading" secondItem="Cgi-ps-p2G" secondAttribute="leadingMargin" constant="20" id="gAI-5i-P3Y"/>
                             <constraint firstItem="0Xm-Yi-t1T" firstAttribute="top" secondItem="KTv-1n-XGB" secondAttribute="bottom" constant="1" id="iZb-gm-Vla"/>
                             <constraint firstAttribute="centerX" secondItem="shH-Rp-E3a" secondAttribute="centerX" id="l0j-P4-lj2"/>
+                            <constraint firstItem="ScI-KZ-Wjw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="0Xm-Yi-t1T" secondAttribute="bottom" priority="250" constant="20" id="s7Z-Y5-64e"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="iZb-gm-Vla"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Lottery" id="Vz1-O3-fEb"/>
                     <connections>
@@ -444,6 +457,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mUI-Sh-wVf"/>
+        <segue reference="3gf-jt-ksf"/>
     </inferredMetricsTieBreakers>
 </document>
