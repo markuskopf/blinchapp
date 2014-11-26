@@ -139,7 +139,7 @@
 */
 
 - (IBAction)serverTestPressed:(id)sender {
-    NSString *blinchURL = @"http://localhost:8080/ping";
+    NSString *blinchURL = @"http://192.168.0.13:8080/ping";
     
     NSURLSession *session = [NSURLSession sharedSession];
     [[session dataTaskWithURL:[NSURL URLWithString:blinchURL] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
@@ -147,7 +147,10 @@
         
        NSString *responseString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
        NSString *bla = [NSString stringWithFormat:@"Response: %@", responseString];
-       NSLog(bla);
+
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Text" message:bla delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
         
         
     }] resume];
