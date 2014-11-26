@@ -148,9 +148,12 @@
        NSString *responseString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
        NSString *bla = [NSString stringWithFormat:@"Response: %@", responseString];
 
-        
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Text" message:bla delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        [alert show];
+
+        dispatch_async(dispatch_get_main_queue(), ^{
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Text" message:bla delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [alert show];
+        });
+
         
         
     }] resume];
