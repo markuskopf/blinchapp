@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6214" systemVersion="14A314h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6207"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -17,25 +17,76 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blinch" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
-                    <rect key="frame" x="20" y="140" width="441" height="43"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BLILaunchImage_w2208_h2208.png" translatesAutoresizingMaskIntoConstraints="NO" id="DL3-1P-I6J">
+                    <rect key="frame" x="-16" y="0.0" width="507" height="488"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="507" id="9lg-eD-RkS"/>
+                        <constraint firstAttribute="width" secondItem="DL3-1P-I6J" secondAttribute="height" multiplier="507:488" id="ISs-AO-gBm"/>
+                        <constraint firstAttribute="height" constant="488" id="Vlq-X0-IE4"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="9lg-eD-RkS"/>
+                            <exclude reference="ISs-AO-gBm"/>
+                            <exclude reference="Vlq-X0-IE4"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BLILaunchImage_Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ILD-ZX-bTQ">
+                    <rect key="frame" x="90" y="90" width="300" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="W0V-df-JPX"/>
+                        <constraint firstAttribute="width" constant="300" id="ndz-mL-sZW"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="1/3" constant="1" id="5cJ-9S-tgC"/>
-                <constraint firstAttribute="centerX" secondItem="kId-c2-rCX" secondAttribute="centerX" id="Koa-jz-hwk"/>
-                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
-                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
-                <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
-                <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="fvb-Df-36g"/>
+                <constraint firstItem="8ie-xW-0ye" firstAttribute="top" secondItem="ILD-ZX-bTQ" secondAttribute="bottom" constant="80" id="51K-A5-L1d"/>
+                <constraint firstItem="ILD-ZX-bTQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="99" id="CBm-Zb-biM"/>
+                <constraint firstAttribute="trailing" secondItem="DL3-1P-I6J" secondAttribute="trailing" constant="-11" id="HAG-3m-ajg"/>
+                <constraint firstAttribute="trailing" secondItem="DL3-1P-I6J" secondAttribute="trailing" constant="-11" id="HDV-tn-cxq"/>
+                <constraint firstItem="ILD-ZX-bTQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" constant="200" id="LYV-m8-ffQ"/>
+                <constraint firstAttribute="centerY" secondItem="DL3-1P-I6J" secondAttribute="centerY" id="LdD-Y7-mNC"/>
+                <constraint firstItem="DL3-1P-I6J" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-16" id="N47-tG-xhr"/>
+                <constraint firstAttribute="centerX" secondItem="DL3-1P-I6J" secondAttribute="centerX" id="P4x-D7-aIX"/>
+                <constraint firstItem="DL3-1P-I6J" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Qc1-Hw-lop"/>
+                <constraint firstItem="DL3-1P-I6J" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-16" id="RNv-lg-y3m"/>
+                <constraint firstAttribute="centerY" secondItem="DL3-1P-I6J" secondAttribute="centerY" constant="-4" id="U9G-Pq-9kc"/>
+                <constraint firstAttribute="centerX" secondItem="DL3-1P-I6J" secondAttribute="centerX" constant="2.5" id="daY-Yk-gB7"/>
+                <constraint firstItem="8ie-xW-0ye" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fEa-MK-kJM"/>
+                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="fT4-vw-7IL"/>
+                <constraint firstAttribute="bottom" secondItem="DL3-1P-I6J" secondAttribute="bottom" constant="-8" id="hDz-l8-aUZ"/>
+                <constraint firstAttribute="centerX" secondItem="ILD-ZX-bTQ" secondAttribute="centerX" id="nNs-cO-Zvq"/>
+                <constraint firstAttribute="centerX" secondItem="DL3-1P-I6J" secondAttribute="centerX" id="ppm-ei-mFf"/>
+                <constraint firstItem="8ie-xW-0ye" firstAttribute="top" secondItem="ILD-ZX-bTQ" secondAttribute="bottom" constant="80" id="ram-JB-8Zr"/>
+                <constraint firstAttribute="centerY" secondItem="ILD-ZX-bTQ" secondAttribute="centerY" id="ubg-IB-j7t"/>
+                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="wHr-Lq-EOI"/>
+                <constraint firstAttribute="centerY" secondItem="ILD-ZX-bTQ" secondAttribute="centerY" id="xnd-YT-U4q"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="HAG-3m-ajg"/>
+                    <exclude reference="LdD-Y7-mNC"/>
+                    <exclude reference="P4x-D7-aIX"/>
+                    <exclude reference="RNv-lg-y3m"/>
+                    <exclude reference="U9G-Pq-9kc"/>
+                    <exclude reference="daY-Yk-gB7"/>
+                    <exclude reference="ppm-ei-mFf"/>
+                    <exclude reference="CBm-Zb-biM"/>
+                    <exclude reference="LYV-m8-ffQ"/>
+                    <exclude reference="ubg-IB-j7t"/>
+                    <exclude reference="51K-A5-L1d"/>
+                    <exclude reference="ram-JB-8Zr"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
+    <resources>
+        <image name="BLILaunchImage_Logo.png" width="1272" height="1272"/>
+        <image name="BLILaunchImage_w2208_h2208.png" width="2208" height="2208"/>
+    </resources>
 </document>

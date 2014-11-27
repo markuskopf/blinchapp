@@ -21,6 +21,8 @@
 		AB586FBD1A174A3E00E8D00E /* BLILotteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586FB81A174A3E00E8D00E /* BLILotteryViewController.m */; };
 		AB586FC01A174CD200E8D00E /* Blunch_Logo640w.png in Resources */ = {isa = PBXBuildFile; fileRef = AB586FBF1A174CD200E8D00E /* Blunch_Logo640w.png */; };
 		AB586FC61A17502200E8D00E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586FC51A17502200E8D00E /* AppDelegate.m */; };
+		ABFA472C1A272CA300E08D57 /* BLILaunchImage_w2208_h2208.png in Resources */ = {isa = PBXBuildFile; fileRef = ABFA472B1A272CA300E08D57 /* BLILaunchImage_w2208_h2208.png */; };
+		ABFA472E1A272D5600E08D57 /* BLILaunchImage_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = ABFA472D1A272D5600E08D57 /* BLILaunchImage_Logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		AB586FC21A174CEB00E8D00E /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		AB586FC41A17502200E8D00E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AB586FC51A17502200E8D00E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ABFA472B1A272CA300E08D57 /* BLILaunchImage_w2208_h2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BLILaunchImage_w2208_h2208.png; sourceTree = "<group>"; };
+		ABFA472D1A272D5600E08D57 /* BLILaunchImage_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BLILaunchImage_Logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,8 +161,8 @@
 		AB586FBE1A174A7D00E8D00E /* Ressource */ = {
 			isa = PBXGroup;
 			children = (
+				ABFA47221A27238800E08D57 /* Images */,
 				AB586FC31A174CF000E8D00E /* Fonts */,
-				AB586FBF1A174CD200E8D00E /* Blunch_Logo640w.png */,
 			);
 			name = Ressource;
 			sourceTree = "<group>";
@@ -170,6 +174,16 @@
 				AB586FC21A174CEB00E8D00E /* Montserrat-Regular.ttf */,
 			);
 			name = Fonts;
+			sourceTree = "<group>";
+		};
+		ABFA47221A27238800E08D57 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				ABFA472D1A272D5600E08D57 /* BLILaunchImage_Logo.png */,
+				ABFA472B1A272CA300E08D57 /* BLILaunchImage_w2208_h2208.png */,
+				AB586FBF1A174CD200E8D00E /* Blunch_Logo640w.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,9 +267,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB586FAE1A1749E500E8D00E /* Main.storyboard in Resources */,
+				ABFA472E1A272D5600E08D57 /* BLILaunchImage_Logo.png in Resources */,
 				AB586F921A173F8200E8D00E /* LaunchScreen.xib in Resources */,
 				AB586F8F1A173F8200E8D00E /* Images.xcassets in Resources */,
 				AB586FC01A174CD200E8D00E /* Blunch_Logo640w.png in Resources */,
+				ABFA472C1A272CA300E08D57 /* BLILaunchImage_w2208_h2208.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +411,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Blinch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -405,7 +423,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Blinch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
