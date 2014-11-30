@@ -15,15 +15,24 @@
 @implementation AppDelegate
 
 
+#pragma mark - Checks if user was already logged in
+
+
+
+#pragma mark - Permission for sending Notifications
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
-    // Do all the notifcation foo
+/*
+    // TODO: tob uncomment to set reminder notifications on Wednesday > see below
+    // notifcation foo
     [self configureNotifications];
     [NSThread sleepForTimeInterval:2];
     
     NSLog(@"didFinishLaunchingWithOptions called");
-    
+*/
     
     // Handle launching from a notification
     UILocalNotification *localNotif = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
@@ -33,6 +42,8 @@
     
     return YES;
 }
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -57,6 +68,7 @@
 }
 
 #pragma mark - Calling notifications for Wed
+
 
 - (void)configureNotifications
 {
@@ -87,12 +99,15 @@
     // Create own in app notification
     UILocalNotification *localNotif = [[UILocalNotification alloc] init];
     localNotif.timeZone = [NSTimeZone defaultTimeZone];
-    
-    
-    // ONLY FOR DEMO!!!!
-    localNotif.fireDate = [[NSDate date] dateByAddingTimeInterval:60];
 
-    // Please comment if only WED is desired.
+    
+    
+//    // Demo Notification after 60 seconds
+//    localNotif.fireDate = [[NSDate date] dateByAddingTimeInterval:60];
+
+
+    
+    // Please discomment if only WED is desired.
 //    localNotif.fireDate = [calendar dateFromComponents:componentsForFireDate];
 //    localNotif.repeatInterval = kCFCalendarUnitWeekday;
     
@@ -111,6 +126,7 @@
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotif];
     
 }
+
 
 
 - (void)application:(UIApplication *)app didReceiveLocalNotification:(UILocalNotification *)notif {

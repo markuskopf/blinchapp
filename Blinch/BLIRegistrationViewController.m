@@ -139,7 +139,7 @@
 */
 
 - (IBAction)serverTestPressed:(id)sender {
-    NSString *blinchURL = @"http://192.168.0.13:8080/ping";
+    NSString *blinchURL = @"http://localhost:8080/ping";
     
     NSURLSession *session = [NSURLSession sharedSession];
     [[session dataTaskWithURL:[NSURL URLWithString:blinchURL] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
