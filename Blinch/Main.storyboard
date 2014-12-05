@@ -95,7 +95,7 @@
         <!--Check in-->
         <scene sceneID="8B0-cB-elv">
             <objects>
-                <viewController id="eaB-Ai-iTc" customClass="BLICheckInViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="checkInStoryBoard" id="eaB-Ai-iTc" customClass="BLICheckInViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f04-GF-a1Y"/>
                         <viewControllerLayoutGuide type="bottom" id="mDS-9T-iLg"/>
@@ -381,9 +381,6 @@
                                 <state key="normal" title="Send!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="eaB-Ai-iTc" kind="show" id="fG6-1Q-Cpd"/>
-                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your mobile email adress" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9MH-a4-r64">
                                 <rect key="frame" x="119" y="409" width="360" height="50"/>
@@ -441,11 +438,12 @@
                     <connections>
                         <outlet property="registrationEmailTextField" destination="9MH-a4-r64" id="n1n-xP-haX"/>
                         <outlet property="registrationNameTextField" destination="IRq-3V-3rn" id="VNj-0E-rDp"/>
+                        <segue destination="eaB-Ai-iTc" kind="push" identifier="segueCheckin" id="ndq-t7-psF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="No6-Rr-EoE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2826" y="1001"/>
+            <point key="canvasLocation" x="2913" y="1001"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="L8L-nv-TCX">

@@ -7,6 +7,7 @@
 //
 
 #import "BLIRegistrationViewController.h"
+#import "BLICheckInViewController.h"
 
 @interface BLIRegistrationViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *sendRegistrationDetailsButton;
@@ -138,6 +139,7 @@
 }
 */
 
+
 - (IBAction)serverTestPressed:(id)sender {
     NSString *blinchURL = @"http://localhost:8080/ping";
     
@@ -150,6 +152,16 @@
 
 
         dispatch_async(dispatch_get_main_queue(), ^{
+            
+            
+            if (!error) {
+                [self performSegueWithIdentifier:@"segueCheckin" sender:sender];
+            } else {
+                [self performSegueWithIdentifier:@"segueCheckin" sender:sender];
+            }
+
+            return ;
+            
             UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Text" message:bla delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [alert show];
         });
@@ -158,6 +170,19 @@
         
     }] resume];
 }
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+   if ([[segue identifier] isEqualToString:@"segueCheckin"])
+    {
+       BLICheckInViewController *destination = [segue destinationViewController];
+
+    }
+    
+    
+}
+
 
 
 @end
