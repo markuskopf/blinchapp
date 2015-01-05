@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BLIRegistrationViewController : UIViewController <UITextFieldDelegate>
+@interface BLIRegistrationViewController : UIViewController <UITextFieldDelegate, UIAlertViewDelegate>
 
 @end

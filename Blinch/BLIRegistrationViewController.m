@@ -141,29 +141,21 @@
 
 
 - (IBAction)serverTestPressed:(id)sender {
-    NSString *blinchURL = @"http://localhost:8080/ping";
+    NSString *blinchURL = @"http://localhost:8080/v1/status";
     
     NSURLSession *session = [NSURLSession sharedSession];
     [[session dataTaskWithURL:[NSURL URLWithString:blinchURL] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-                // handle response
         
-       NSString *responseString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-       NSString *bla = [NSString stringWithFormat:@"Response: %@", responseString];
-
-
+        NSDictionary *responseData = (NSDictionary*)[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+        
         dispatch_async(dispatch_get_main_queue(), ^{
-            
-            
             if (!error) {
-                [self performSegueWithIdentifier:@"segueCheckin" sender:sender];
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Server Message" message:[responseData valueForKey:@"message"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                [alert show];
             } else {
-                [self performSegueWithIdentifier:@"segueCheckin" sender:sender];
+                UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Server Message" message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                [errorAlert show];
             }
-
-            return ;
-            
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Text" message:bla delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-            [alert show];
         });
 
         
@@ -179,9 +171,21 @@
        BLICheckInViewController *destination = [segue destinationViewController];
 
     }
+   
+}
+
+
+#pragma mark - AlertViewDelegate
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    
+    [self performSegueWithIdentifier:@"segueCheckin" sender:nil];
     
     
 }
+
+
 
 
 
