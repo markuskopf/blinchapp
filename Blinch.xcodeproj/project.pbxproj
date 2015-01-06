@@ -41,6 +41,7 @@
 		44394993D4F02E684A52C292 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		752D67A21A5BFC8F0099045E /* BLIFacadeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLIFacadeManager.h; sourceTree = "<group>"; };
 		752D67A31A5BFC8F0099045E /* BLIFacadeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLIFacadeManager.m; sourceTree = "<group>"; };
+		752D67A61A5C297C0099045E /* Blinch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blinch-Prefix.pch"; sourceTree = "<group>"; };
 		8871DE7A68C3057EBD952A3B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AB586F7E1A173F8200E8D00E /* Blinch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blinch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB586F821A173F8200E8D00E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -190,6 +191,7 @@
 			children = (
 				AB586F821A173F8200E8D00E /* Info.plist */,
 				AB586F831A173F8200E8D00E /* main.m */,
+				752D67A61A5C297C0099045E /* Blinch-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

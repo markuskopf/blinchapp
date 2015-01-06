@@ -10,4 +10,18 @@
 
 @interface BLIFacadeManager : NSObject
 
+
++ (BLIFacadeManager *)sharedInstance;
+
+
+- (BOOL)registration:(NSString *)mail name:(NSString*)name;
+
+- (BOOL)status;
+
+- (void)checkin;
+
+- (void)checkout;
+
+
+
 @end
