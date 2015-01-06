@@ -393,16 +393,6 @@
                                     <outlet property="delegate" destination="Van-Vk-cAZ" id="yPu-g7-gvw"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tlh-Aj-HqH">
-                                <rect key="frame" x="262" y="112" width="77" height="30"/>
-                                <state key="normal" title="Server Test">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="serverTestPressed:" destination="Van-Vk-cAZ" eventType="touchUpInside" id="80G-vg-8lu"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1082915146" green="0.74789005470000003" blue="0.41574475360000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -434,7 +424,13 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Registration" id="DLD-nj-qVa"/>
+                    <navigationItem key="navigationItem" title="Registration" id="DLD-nj-qVa">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="refresh" id="7DA-AT-gkn">
+                            <connections>
+                                <action selector="serverTestPressed:" destination="Van-Vk-cAZ" id="grz-7M-NGM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="registrationEmailTextField" destination="9MH-a4-r64" id="n1n-xP-haX"/>
                         <outlet property="registrationNameTextField" destination="IRq-3V-3rn" id="VNj-0E-rDp"/>
