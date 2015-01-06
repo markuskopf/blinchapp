@@ -65,7 +65,7 @@ static BLIFacadeManager *sharedInstance = nil;
 
 - (BOOL)status
 {
-    NSString *blinchURL = @"http://localhost:8080/v1/status";
+    NSString *blinchURL = @"http://192.168.0.15:8080/v1/status";
     
     NSURLSession *session = [NSURLSession sharedSession];
     [[session dataTaskWithURL:[NSURL URLWithString:blinchURL] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
