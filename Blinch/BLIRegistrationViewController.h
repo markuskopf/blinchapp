@@ -11,3 +11,4 @@
 @interface BLIRegistrationViewController : UIViewController <UITextFieldDelegate, UIAlertViewDelegate>
 
 @end
+

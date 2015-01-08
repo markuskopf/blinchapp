@@ -381,6 +381,9 @@
                                 <state key="normal" title="Send!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="sendRegistrationDetailsButton:" destination="Van-Vk-cAZ" eventType="touchUpInside" id="20d-Om-EuE"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your mobile email adress" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9MH-a4-r64">
                                 <rect key="frame" x="119" y="409" width="360" height="50"/>
@@ -434,6 +437,7 @@
                     <connections>
                         <outlet property="registrationEmailTextField" destination="9MH-a4-r64" id="n1n-xP-haX"/>
                         <outlet property="registrationNameTextField" destination="IRq-3V-3rn" id="VNj-0E-rDp"/>
+                        <outlet property="sendRegistrationDetailsButton" destination="Ig2-6k-9WU" id="hcK-HP-Qpg"/>
                         <segue destination="eaB-Ai-iTc" kind="push" identifier="segueCheckin" id="ndq-t7-psF"/>
                     </connections>
                 </viewController>
