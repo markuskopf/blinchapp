@@ -144,7 +144,7 @@
 
 - (IBAction)serverTestPressed:(id)sender
 {
-    NSString *blinchURL = @"http://192.168.0.15:8080/v1/status";
+    NSString *blinchURL = @"http://blinchapp.com:8080/v1/status";
     
     NSURLSession *session = [NSURLSession sharedSession];
     
@@ -203,7 +203,7 @@
     NSLog(@"");
     
     
-    NSString *blinchURL = @"http://192.168.0.15:8080/v1/status";
+    NSString *blinchURL = @"http://blinchapp.com:8080/v1/status";
     
     NSURLSession *session = [NSURLSession sharedSession];
     
