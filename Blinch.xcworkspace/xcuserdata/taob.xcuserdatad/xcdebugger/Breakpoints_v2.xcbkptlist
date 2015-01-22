@@ -10,29 +10,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Blinch/BLIRegistrationViewController.m"
-            timestampString = "442254136.331647"
+            timestampString = "443647764.868447"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "195"
-            endingLineNumber = "195"
-            landmarkName = "@implementation BLIRegistrationViewController"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Blinch/BLIRegistrationViewController.m"
-            timestampString = "442256010.66757"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "203"
-            endingLineNumber = "203"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
             landmarkName = "-sendRegistrationDetailsButton:"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__63-[BLIRegistrationViewController sendRegistrationDetailsButton:]_block_invoke"
+                  moduleName = "Blinch"
+                  urlString = "file:///1_PROJEKTE/02_Blinch/Development/blinchapp/Blinch/BLIRegistrationViewController.m"
+                  timestampString = "442679757.307717"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "214"
+                  endingLineNumber = "214"
+                  offsetFromSymbolStart = "178">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__63-[BLIRegistrationViewController sendRegistrationDetailsButton:]_block_invoke_2"
+                  moduleName = "Blinch"
+                  urlString = "file:///1_PROJEKTE/02_Blinch/Development/blinchapp/Blinch/BLIRegistrationViewController.m"
+                  timestampString = "442679757.307908"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "214"
+                  endingLineNumber = "214"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

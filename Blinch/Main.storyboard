@@ -90,7 +90,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f1T-TN-Grg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5682" y="1000.9999999999998"/>
+            <point key="canvasLocation" x="5290" y="2072"/>
         </scene>
         <!--Check in-->
         <scene sceneID="8B0-cB-elv">
@@ -439,11 +439,12 @@
                         <outlet property="registrationNameTextField" destination="IRq-3V-3rn" id="VNj-0E-rDp"/>
                         <outlet property="sendRegistrationDetailsButton" destination="Ig2-6k-9WU" id="hcK-HP-Qpg"/>
                         <segue destination="eaB-Ai-iTc" kind="push" identifier="segueCheckin" id="ndq-t7-psF"/>
+                        <segue destination="ZgV-ND-BLB" kind="presentation" identifier="segueRegistrationToHistory" id="lQR-jq-zle"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="No6-Rr-EoE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2913" y="1001"/>
+            <point key="canvasLocation" x="2777" y="985"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="L8L-nv-TCX">
@@ -465,6 +466,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mUI-Sh-wVf"/>
+        <segue reference="lQR-jq-zle"/>
     </inferredMetricsTieBreakers>
 </document>

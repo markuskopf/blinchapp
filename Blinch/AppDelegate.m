@@ -90,8 +90,8 @@
                                                                     NSCalendarUnitWeekday)
                                                           fromDate:[NSDate date]];
     
-    [componentsForFireDate setWeekday: 4] ; //for fixing Sunday
-    [componentsForFireDate setHour: 8] ; //for fixing 8PM hour
+    [componentsForFireDate setWeekday: 4] ; //for firing Wednesday
+    [componentsForFireDate setHour: 8] ; //for firing 8PM hour
     [componentsForFireDate setMinute:0] ;
     [componentsForFireDate setSecond:0] ;
     

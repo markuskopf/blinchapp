@@ -181,12 +181,24 @@
 }
 
 
+
 #pragma mark - AlertViewDelegate
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     
-    [self performSegueWithIdentifier:@"segueCheckin" sender:nil];
+    
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *weekdayCalendar = [calendar components:(NSCalendarUnitWeekday)
+                                                    fromDate:[NSDate date]];
+    // trigger notification only every Wed
+    if ([weekdayCalendar weekday] == 4) {
+        [self performSegueWithIdentifier:@"segueCheckin" sender:nil];
+    }
+    
+    else {
+        [self performSegueWithIdentifier:@"segueRegistrationToHistory" sender:nil];
+    }
     
     
 }
@@ -215,6 +227,8 @@
             if (!error) {
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Server Message" message:[responseData valueForKey:@"message"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
                 [alert show];
+                
+                
             } else {
                 UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Server Message" message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
                 [errorAlert show];
