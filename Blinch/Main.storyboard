@@ -99,7 +99,7 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.1508895985" green="0.74789005470000003" blue="0.41574475360000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.36862745099999999" green="0.70588235290000001" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dayLabel" destination="3qk-eE-zW5" id="WBl-Px-9F2"/>
                                     <outlet property="monthLabel" destination="QNf-W6-MBn" id="NCv-FZ-BTI"/>
@@ -288,7 +288,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.1508895985" green="0.74789005470000003" blue="0.41574475360000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.36862745099999999" green="0.70588235290000001" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="jFT-kh-Uc2" firstAttribute="top" relation="greaterThanOrEqual" secondItem="zu1-Xh-MMA" secondAttribute="bottom" constant="1" id="008-I6-8sN"/>
                             <constraint firstItem="jFT-kh-Uc2" firstAttribute="height" secondItem="LWT-x4-dgJ" secondAttribute="height" id="1a5-yc-cJG"/>
@@ -395,7 +395,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.1508895985" green="0.74789005470000003" blue="0.41574475360000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.36862745099999999" green="0.70588235290000001" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="33V-hX-x7E" secondAttribute="trailing" constant="24" id="BUQ-zx-awE"/>
                             <constraint firstItem="33V-hX-x7E" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bn8-ui-hMY" secondAttribute="bottom" constant="20" id="Gvc-ha-xtv"/>
@@ -494,7 +494,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.1508895985" green="0.74789005470000003" blue="0.41574475360000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.36862745099999999" green="0.70588235290000001" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="KTv-1n-XGB" firstAttribute="centerX" secondItem="Cgi-ps-p2G" secondAttribute="centerX" id="8rZ-5f-Hk6"/>
                             <constraint firstItem="KTv-1n-XGB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="shH-Rp-E3a" secondAttribute="bottom" constant="-10" id="Gob-SR-EGD"/>
