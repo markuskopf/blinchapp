@@ -170,46 +170,6 @@
 */
 
 
-- (IBAction)serverTestPressed:(id)sender
-{
-    NSString *blinchURL = @"http://blinchapp.com:8080/v1/status";
-    
-    NSURLSession *session = [NSURLSession sharedSession];
-    
-    [[session dataTaskWithURL:[NSURL URLWithString:blinchURL] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        
-        NSDictionary *responseData = (NSDictionary*)[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            if (!error) {
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Server Message" message:[responseData valueForKey:@"message"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                [alert show];
-            } else {
-                UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Server Message" message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                [errorAlert show];
-            }
-        });
-        
-        
-        
-    }] resume];
-    
-
-}
-
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-   if ([[segue identifier] isEqualToString:@"segueCheckin"])
-    {
-       BLICheckInViewController *destination = [segue destinationViewController];
-
-    }
-   
-}
-
-
-
 #pragma mark - AlertViewDelegate
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
@@ -261,28 +221,6 @@
     
     
     [dataTask resume];
-    
-    
-    
-//    [[self.session dataTaskWithURL:[NSURL URLWithString:blinchURL] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-//        
-//        NSDictionary *responseData = (NSDictionary*)[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-//        
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            if (!error) {
-//                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Server Message" message:[responseData valueForKey:@"message"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-//                [alert show];
-//                
-//                
-//            } else {
-//                UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Server Message" message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-//                [errorAlert show];
-//            }
-//        });
-//        
-//        
-//        
-//    }] resume];
     
 }
 

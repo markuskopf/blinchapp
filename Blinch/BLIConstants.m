@@ -10,4 +10,9 @@
 
 NSString * const BLIAdminUserName = @"mkopf";
 NSString * const BLIAdminPassword = @"1qazxsw2";
-NSString * const BLIAuthenticationValues = @"Basic bWtvcGY6MXFhenhzdzI=";
+NSString * const BLIAuthenticationValue = @"Basic bWtvcGY6MXFhenhzdzI=";
+
+
+// Segue
+NSString * const BLIRegistrationSegue = @"BLIRegistrationSegue";
+NSString * const BLILoginSegue = @"BLILoginSegue";

@@ -19,6 +19,8 @@
 		7563CD721BE8046F00BC337D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD711BE8046F00BC337D /* AdSupport.framework */; };
 		7563CD741BE8048900BC337D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD731BE8048900BC337D /* CoreMotion.framework */; };
 		7563CD761BE804A400BC337D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD751BE804A400BC337D /* StoreKit.framework */; };
+		75731EF61C56AF9100330424 /* BLILandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75731EF51C56AF9100330424 /* BLILandingViewController.m */; };
+		75731EFB1C56B44F00330424 /* BLILoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75731EFA1C56B44F00330424 /* BLILoginViewController.m */; };
 		AB586F841A173F8200E8D00E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586F831A173F8200E8D00E /* main.m */; };
 		AB586F8F1A173F8200E8D00E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB586F8E1A173F8200E8D00E /* Images.xcassets */; };
 		AB586F921A173F8200E8D00E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB586F901A173F8200E8D00E /* LaunchScreen.xib */; };
@@ -65,6 +67,10 @@
 		7563CD711BE8046F00BC337D /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		7563CD731BE8048900BC337D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		7563CD751BE804A400BC337D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		75731EF41C56AF9100330424 /* BLILandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLILandingViewController.h; sourceTree = "<group>"; };
+		75731EF51C56AF9100330424 /* BLILandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLILandingViewController.m; sourceTree = "<group>"; };
+		75731EF91C56B44F00330424 /* BLILoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLILoginViewController.h; sourceTree = "<group>"; };
+		75731EFA1C56B44F00330424 /* BLILoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLILoginViewController.m; sourceTree = "<group>"; };
 		8871DE7A68C3057EBD952A3B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AB586F7E1A173F8200E8D00E /* Blinch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blinch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB586F821A173F8200E8D00E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -156,6 +162,10 @@
 		752D67A01A5BFC250099045E /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				75731EF41C56AF9100330424 /* BLILandingViewController.h */,
+				75731EF51C56AF9100330424 /* BLILandingViewController.m */,
+				75731EF91C56B44F00330424 /* BLILoginViewController.h */,
+				75731EFA1C56B44F00330424 /* BLILoginViewController.m */,
 				AB586FAF1A174A3E00E8D00E /* BLIRegistrationViewController.h */,
 				AB586FB01A174A3E00E8D00E /* BLIRegistrationViewController.m */,
 				AB586FB11A174A3E00E8D00E /* BLICheckInViewController.h */,
@@ -436,7 +446,9 @@
 				752D67A41A5BFC8F0099045E /* BLIFacadeManager.m in Sources */,
 				AB586FBC1A174A3E00E8D00E /* BLIPickerView.m in Sources */,
 				AB586FC61A17502200E8D00E /* AppDelegate.m in Sources */,
+				75731EF61C56AF9100330424 /* BLILandingViewController.m in Sources */,
 				AB586FBA1A174A3E00E8D00E /* BLICheckInViewController.m in Sources */,
+				75731EFB1C56B44F00330424 /* BLILoginViewController.m in Sources */,
 				AB586FAB1A17495100E8D00E /* BLIHistoryTableViewController.m in Sources */,
 				AB586FBD1A174A3E00E8D00E /* BLILotteryViewController.m in Sources */,
 				AB586FBB1A174A3E00E8D00E /* BLIDrawPartnerViewController.m in Sources */,
