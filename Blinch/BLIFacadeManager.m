@@ -3,7 +3,7 @@
 //  Blinch
 //
 //  Created by Markus Kopf on 06/01/15.
-//  Copyright (c) 2015 Oberst Tanja. All rights reserved.
+//  Copyright (c) 2015 Markus Kopf. All rights reserved.
 //
 
 #import "BLIFacadeManager.h"
