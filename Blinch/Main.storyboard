@@ -113,7 +113,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f1T-TN-Grg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4274" y="2573"/>
+            <point key="canvasLocation" x="5086" y="2561"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="h0n-Wz-ARK">
@@ -190,7 +190,7 @@
                     </view>
                     <connections>
                         <segue destination="4QX-pG-4Vi" kind="show" identifier="BLILoginProcessSegue" id="jhY-iO-EPU"/>
-                        <segue destination="eaB-Ai-iTc" kind="show" identifier="BLICheckinSegue" id="9Ls-eX-vch"/>
+                        <segue destination="ZMM-zB-hDH" kind="show" identifier="BLICheckinSegue" id="VHZ-0s-zyC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="imO-C7-e6M" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -248,21 +248,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFT-kh-Uc2">
-                                <rect key="frame" x="36" y="422" width="528" height="48"/>
-                                <color key="backgroundColor" red="0.38381044710000001" green="0.35786382300000003" blue="0.62602645990000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="29"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Yes!">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="36" y="422" width="328" height="50"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="8pL-Tz-z1I" kind="show" id="Jbn-TJ-iDm"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWT-x4-dgJ">
                                 <rect key="frame" x="36" y="483" width="528" height="48"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -275,9 +260,6 @@
                                 <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="36" y="485" width="328" height="50"/>
                                 </variation>
-                                <connections>
-                                    <segue destination="ZgV-ND-BLB" kind="show" id="mUI-Sh-wVf"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Would you like to check in for Blunch today?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zu1-Xh-MMA">
                                 <rect key="frame" x="50" y="104" width="500" height="71"/>
@@ -294,6 +276,21 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFT-kh-Uc2">
+                                <rect key="frame" x="36" y="422" width="528" height="48"/>
+                                <color key="backgroundColor" red="0.38381044710000001" green="0.35786382300000003" blue="0.62602645990000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="29"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Yes!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="36" y="422" width="328" height="50"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="8pL-Tz-z1I" kind="show" id="Jbn-TJ-iDm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1508895985" green="0.74789005470000003" blue="0.41574475360000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -353,7 +350,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hlz-dA-Fma" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3503" y="1784"/>
+            <point key="canvasLocation" x="5086" y="1784"/>
         </scene>
         <!--Draw partner-->
         <scene sceneID="eM6-bV-Soh">
@@ -446,7 +443,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hlh-7c-8OB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4274" y="1784"/>
+            <point key="canvasLocation" x="5802" y="1784"/>
         </scene>
         <!--Lottery-->
         <scene sceneID="rhw-6r-8pP">
@@ -541,12 +538,11 @@
                     <navigationItem key="navigationItem" title="Lottery" id="Vz1-O3-fEb"/>
                     <connections>
                         <outlet property="lotteryPicker" destination="KTv-1n-XGB" id="nwl-u0-N7d"/>
-                        <segue destination="ZgV-ND-BLB" kind="show" identifier="historySegue" id="3gf-jt-ksf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zHU-5O-AER" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5051" y="1784"/>
+            <point key="canvasLocation" x="6496" y="1776"/>
         </scene>
         <!--Registration-->
         <scene sceneID="TKo-EC-Wa5">
@@ -686,12 +682,31 @@
                         <outlet property="registrationEmailTextField" destination="9MH-a4-r64" id="n1n-xP-haX"/>
                         <outlet property="registrationNameTextField" destination="IRq-3V-3rn" id="VNj-0E-rDp"/>
                         <outlet property="sendRegistrationDetailsButton" destination="Ig2-6k-9WU" id="hcK-HP-Qpg"/>
-                        <segue destination="eaB-Ai-iTc" kind="push" identifier="segueCheckin" id="ndq-t7-psF"/>
+                        <segue destination="ZMM-zB-hDH" kind="show" identifier="segueCheckin" id="WNp-k7-pi1"/>
+                        <segue destination="EUo-El-sN2" kind="show" id="4UZ-zy-1lA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="No6-Rr-EoE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2782" y="1784"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="7VQ-4N-gBe">
+            <objects>
+                <tabBarController id="ZMM-zB-hDH" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Qe1-xd-7fI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Bcv-6b-ukE" kind="relationship" relationship="viewControllers" id="jhj-wH-Cvt"/>
+                        <segue destination="Zmu-jM-eMk" kind="relationship" relationship="viewControllers" id="in9-Yc-gHH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3MC-20-2fG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3503" y="1784"/>
         </scene>
         <!--Landing View Controller-->
         <scene sceneID="a4h-sx-jPR">
@@ -808,9 +823,85 @@
             </objects>
             <point key="canvasLocation" x="2076" y="1001"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7X7-ft-TSG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Bcv-6b-ukE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" systemItem="contacts" id="zJo-dn-PW6"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="07Z-MI-hJm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eaB-Ai-iTc" kind="relationship" relationship="rootViewController" id="uhD-7h-ttA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J3M-n2-aBt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4274" y="1784"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nlh-pc-xcc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Zmu-jM-eMk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="history" id="Zx5-yn-S9U"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FGf-Bb-XPx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZgV-ND-BLB" kind="relationship" relationship="rootViewController" id="2HD-DB-gu0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e8h-rE-yMr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4274" y="2561"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Zfz-lE-mDt">
+            <objects>
+                <viewController id="EUo-El-sN2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gxU-Ku-uZI"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jbg-Pe-fZz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sSK-Xo-EPd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="V0G-iX-QuF">
+                                <rect key="frame" x="282" y="267" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6g8-78-9hv">
+                                <rect key="frame" x="208" y="345" width="184.5" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.71372549019999998" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="V0G-iX-QuF" firstAttribute="top" secondItem="gxU-Ku-uZI" secondAttribute="bottom" constant="247" id="I3l-dS-JnP"/>
+                            <constraint firstItem="6g8-78-9hv" firstAttribute="centerX" secondItem="sSK-Xo-EPd" secondAttribute="centerX" id="QGn-BI-dl6"/>
+                            <constraint firstItem="6g8-78-9hv" firstAttribute="top" secondItem="V0G-iX-QuF" secondAttribute="bottom" constant="41" id="mbj-wO-GmO"/>
+                            <constraint firstItem="V0G-iX-QuF" firstAttribute="centerX" secondItem="sSK-Xo-EPd" secondAttribute="centerX" id="usG-1W-Tzz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="indicator" destination="V0G-iX-QuF" id="B41-8w-wzi"/>
+                        <outlet property="logginInLabel" destination="6g8-78-9hv" id="86h-Yg-gzy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LM2-mP-TWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2782" y="2528"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9Ls-eX-vch"/>
-        <segue reference="3gf-jt-ksf"/>
+        <segue reference="WNp-k7-pi1"/>
     </inferredMetricsTieBreakers>
 </document>
