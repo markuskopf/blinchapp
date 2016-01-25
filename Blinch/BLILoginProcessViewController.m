@@ -1,22 +1,29 @@
 //
-//  BLILoginViewController.m
+//  BLILoginProcessViewController.m
 //  Blinch
 //
 //  Created by Markus Kopf on 25/01/16.
 //  Copyright © 2016 Oberst Tanja. All rights reserved.
 //
 
-#import "BLILoginViewController.h"
+#import "BLILoginProcessViewController.h"
 
-@interface BLILoginViewController () 
+@interface BLILoginProcessViewController ()
+
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
+
+@property (weak, nonatomic) IBOutlet UILabel *logginInLabel;
 
 @end
 
-@implementation BLILoginViewController
+@implementation BLILoginProcessViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self.indicator startAnimating];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,21 +40,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-
-
-#pragma mark - BLILoginProcessViewControllerDelegate
-
-- (void)loginViewControllerDidFinish:(BLILoginProcessViewController *)loginViewController {
-    
-}
-
-/**
- * highlights errors arising from the login process.
- */
-
-- (void)loginDidFailWithError:(NSError *)error {
-    
-}
 
 @end

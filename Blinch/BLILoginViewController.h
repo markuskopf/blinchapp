@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BLILoginProcessViewController.m"
 
-@interface BLILoginViewController : UIViewController
+@interface BLILoginViewController : UIViewController <BLILoginProcessViewControllerDelegate>
 
 @end

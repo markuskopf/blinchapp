@@ -16,3 +16,5 @@ NSString * const BLIAuthenticationValue = @"Basic bWtvcGY6MXFhenhzdzI=";
 // Segue
 NSString * const BLIRegistrationSegue = @"BLIRegistrationSegue";
 NSString * const BLILoginSegue = @"BLILoginSegue";
+NSString * const BLILoginProcessSegue = @"BLILoginProcessSegue";
+NSString * const BLICheckinSegue = @"BLICheckinSegue";

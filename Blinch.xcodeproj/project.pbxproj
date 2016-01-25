@@ -16,6 +16,7 @@
 		7563CD761BE804A400BC337D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD751BE804A400BC337D /* StoreKit.framework */; };
 		75731EF61C56AF9100330424 /* BLILandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75731EF51C56AF9100330424 /* BLILandingViewController.m */; };
 		75731EFB1C56B44F00330424 /* BLILoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75731EFA1C56B44F00330424 /* BLILoginViewController.m */; };
+		75731EFE1C56C5FB00330424 /* BLILoginProcessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75731EFD1C56C5FB00330424 /* BLILoginProcessViewController.m */; };
 		AB586F841A173F8200E8D00E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586F831A173F8200E8D00E /* main.m */; };
 		AB586F8F1A173F8200E8D00E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB586F8E1A173F8200E8D00E /* Images.xcassets */; };
 		AB586F921A173F8200E8D00E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB586F901A173F8200E8D00E /* LaunchScreen.xib */; };
@@ -64,6 +65,8 @@
 		75731EF51C56AF9100330424 /* BLILandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLILandingViewController.m; sourceTree = "<group>"; };
 		75731EF91C56B44F00330424 /* BLILoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLILoginViewController.h; sourceTree = "<group>"; };
 		75731EFA1C56B44F00330424 /* BLILoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLILoginViewController.m; sourceTree = "<group>"; };
+		75731EFC1C56C5FB00330424 /* BLILoginProcessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLILoginProcessViewController.h; sourceTree = "<group>"; };
+		75731EFD1C56C5FB00330424 /* BLILoginProcessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLILoginProcessViewController.m; sourceTree = "<group>"; };
 		AB586F7E1A173F8200E8D00E /* Blinch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blinch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB586F821A173F8200E8D00E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB586F831A173F8200E8D00E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -158,6 +161,8 @@
 				AB586FA81A17495100E8D00E /* BLIHistoryTableViewController.m */,
 				AB586FA91A17495100E8D00E /* BLIHistoryTableViewCell.h */,
 				AB586FAA1A17495100E8D00E /* BLIHistoryTableViewCell.m */,
+				75731EFC1C56C5FB00330424 /* BLILoginProcessViewController.h */,
+				75731EFD1C56C5FB00330424 /* BLILoginProcessViewController.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -395,6 +400,7 @@
 				AB586FBB1A174A3E00E8D00E /* BLIDrawPartnerViewController.m in Sources */,
 				751C37371C569BB800777DEC /* BLIConstants.m in Sources */,
 				AB586F841A173F8200E8D00E /* main.m in Sources */,
+				75731EFE1C56C5FB00330424 /* BLILoginProcessViewController.m in Sources */,
 				AB586FB91A174A3E00E8D00E /* BLIRegistrationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
