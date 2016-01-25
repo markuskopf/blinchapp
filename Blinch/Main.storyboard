@@ -21,7 +21,6 @@
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
-            <string>Montserrat-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -164,17 +163,14 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHu-j2-WBa">
                                 <rect key="frame" x="120" y="307" width="360" height="50"/>
                                 <color key="backgroundColor" red="0.38381044710000001" green="0.35786382300000003" blue="0.62602645990000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="29"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="sendRegistrationDetailsButton:" destination="Van-Vk-cAZ" eventType="touchUpInside" id="yw8-Ta-XHz"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.12941176469999999" green="0.71372549019999998" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.36862745099999999" green="0.70588235290000001" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="sHu-j2-WBa" firstAttribute="width" secondItem="PGy-az-NrT" secondAttribute="width" id="2RK-OE-kaU"/>
                             <constraint firstItem="k3C-VL-jAM" firstAttribute="centerX" secondItem="4tL-sO-k1G" secondAttribute="centerX" id="2wX-0Y-6d8"/>
@@ -219,7 +215,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.12941176469999999" green="0.71372549019999998" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.36862745099999999" green="0.70588235290000001" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="DZx-b7-me8" firstAttribute="centerX" secondItem="5Hq-Ra-rft" secondAttribute="centerX" id="eq9-0j-NYX"/>
                             <constraint firstItem="we0-zM-hUV" firstAttribute="top" secondItem="DZx-b7-me8" secondAttribute="bottom" constant="41" id="fRc-OD-L6E"/>
@@ -498,7 +494,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.1082915146" green="0.74789005470000003" blue="0.41574475360000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.1508895985" green="0.74789005470000003" blue="0.41574475360000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="KTv-1n-XGB" firstAttribute="centerX" secondItem="Cgi-ps-p2G" secondAttribute="centerX" id="8rZ-5f-Hk6"/>
                             <constraint firstItem="KTv-1n-XGB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="shH-Rp-E3a" secondAttribute="bottom" constant="-10" id="Gob-SR-EGD"/>
@@ -619,7 +615,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.1082915146" green="0.74789005470000003" blue="0.41574475360000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.36862745099999999" green="0.70588235290000001" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="9MH-a4-r64" firstAttribute="width" secondItem="cJx-Ni-cQ0" secondAttribute="width" id="0Zd-k8-W1g"/>
                             <constraint firstItem="Ig2-6k-9WU" firstAttribute="top" secondItem="9MH-a4-r64" secondAttribute="bottom" constant="135" id="1YS-U4-oqT"/>
@@ -761,7 +757,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.12941176469999999" green="0.71372549019999998" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.36862745098039218" green="0.70588235294117641" blue="0.45490196078431372" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="OZM-FF-CUg" firstAttribute="leading" secondItem="g7G-ZL-Fh2" secondAttribute="leading" id="57H-E8-KTK"/>
                             <constraint firstItem="g7G-ZL-Fh2" firstAttribute="width" secondItem="OZM-FF-CUg" secondAttribute="width" id="BDm-HQ-Xam"/>
@@ -883,7 +879,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.12941176469999999" green="0.71372549019999998" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.36862745099999999" green="0.70588235290000001" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="V0G-iX-QuF" firstAttribute="top" secondItem="gxU-Ku-uZI" secondAttribute="bottom" constant="247" id="I3l-dS-JnP"/>
                             <constraint firstItem="6g8-78-9hv" firstAttribute="centerX" secondItem="sSK-Xo-EPd" secondAttribute="centerX" id="QGn-BI-dl6"/>
@@ -902,6 +898,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="WNp-k7-pi1"/>
+        <segue reference="VHZ-0s-zyC"/>
     </inferredMetricsTieBreakers>
 </document>
