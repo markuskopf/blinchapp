@@ -9,11 +9,6 @@
 /* Begin PBXBuildFile section */
 		751C37371C569BB800777DEC /* BLIConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 751C37361C569BB800777DEC /* BLIConstants.m */; };
 		752D67A41A5BFC8F0099045E /* BLIFacadeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 752D67A31A5BFC8F0099045E /* BLIFacadeManager.m */; };
-		7563CD681BE802F600BC337D /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD631BE802F600BC337D /* FBAudienceNetwork.framework */; };
-		7563CD691BE802F600BC337D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD641BE802F600BC337D /* FBSDKCoreKit.framework */; };
-		7563CD6A1BE802F600BC337D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD651BE802F600BC337D /* FBSDKLoginKit.framework */; };
-		7563CD6B1BE802F600BC337D /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD661BE802F600BC337D /* FBSDKMessengerShareKit.framework */; };
-		7563CD6C1BE802F600BC337D /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD671BE802F600BC337D /* FBSDKShareKit.framework */; };
 		7563CD6E1BE8043700BC337D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD6D1BE8043700BC337D /* AVFoundation.framework */; };
 		7563CD701BE8045700BC337D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD6F1BE8045700BC337D /* CoreMedia.framework */; };
 		7563CD721BE8046F00BC337D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD711BE8046F00BC337D /* AdSupport.framework */; };
@@ -37,7 +32,6 @@
 		AB586FC61A17502200E8D00E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586FC51A17502200E8D00E /* AppDelegate.m */; };
 		ABFA472C1A272CA300E08D57 /* BLILaunchImage_w2208_h2208.png in Resources */ = {isa = PBXBuildFile; fileRef = ABFA472B1A272CA300E08D57 /* BLILaunchImage_w2208_h2208.png */; };
 		ABFA472E1A272D5600E08D57 /* BLILaunchImage_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = ABFA472D1A272D5600E08D57 /* BLILaunchImage_Logo.png */; };
-		D1DEFA78AC7EA5D5C689A6C5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC237BED1ACE80F6B3109222 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +45,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		44394993D4F02E684A52C292 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		751C37351C569BB800777DEC /* BLIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLIConstants.h; sourceTree = "<group>"; };
 		751C37361C569BB800777DEC /* BLIConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLIConstants.m; sourceTree = "<group>"; };
 		752D67A21A5BFC8F0099045E /* BLIFacadeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLIFacadeManager.h; sourceTree = "<group>"; };
@@ -71,7 +64,6 @@
 		75731EF51C56AF9100330424 /* BLILandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLILandingViewController.m; sourceTree = "<group>"; };
 		75731EF91C56B44F00330424 /* BLILoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLILoginViewController.h; sourceTree = "<group>"; };
 		75731EFA1C56B44F00330424 /* BLILoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLILoginViewController.m; sourceTree = "<group>"; };
-		8871DE7A68C3057EBD952A3B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AB586F7E1A173F8200E8D00E /* Blinch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blinch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB586F821A173F8200E8D00E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB586F831A173F8200E8D00E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -115,12 +107,6 @@
 				7563CD721BE8046F00BC337D /* AdSupport.framework in Frameworks */,
 				7563CD701BE8045700BC337D /* CoreMedia.framework in Frameworks */,
 				7563CD6E1BE8043700BC337D /* AVFoundation.framework in Frameworks */,
-				D1DEFA78AC7EA5D5C689A6C5 /* libPods.a in Frameworks */,
-				7563CD691BE802F600BC337D /* FBSDKCoreKit.framework in Frameworks */,
-				7563CD6C1BE802F600BC337D /* FBSDKShareKit.framework in Frameworks */,
-				7563CD6B1BE802F600BC337D /* FBSDKMessengerShareKit.framework in Frameworks */,
-				7563CD6A1BE802F600BC337D /* FBSDKLoginKit.framework in Frameworks */,
-				7563CD681BE802F600BC337D /* FBAudienceNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,15 +120,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		66CDAC9AB4BB83F15A946C26 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8871DE7A68C3057EBD952A3B /* Pods.debug.xcconfig */,
-				44394993D4F02E684A52C292 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		752D679E1A5BFBF50099045E /* Facade */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,7 +175,6 @@
 				AB586F801A173F8200E8D00E /* Blinch */,
 				AB586F9A1A173F8200E8D00E /* BlinchTests */,
 				AB586F7F1A173F8200E8D00E /* Products */,
-				66CDAC9AB4BB83F15A946C26 /* Pods */,
 				AFF862416C3CE3F04277F2B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -311,11 +287,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB586FA11A173F8300E8D00E /* Build configuration list for PBXNativeTarget "Blinch" */;
 			buildPhases = (
-				F3139FE079229285DC78E38E /* Check Pods Manifest.lock */,
 				AB586F7A1A173F8200E8D00E /* Sources */,
 				AB586F7B1A173F8200E8D00E /* Frameworks */,
 				AB586F7C1A173F8200E8D00E /* Resources */,
-				9D6D0EEF0D9B8A47DDE228C0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -403,39 +377,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		9D6D0EEF0D9B8A47DDE228C0 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F3139FE079229285DC78E38E /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB586F7A1A173F8200E8D00E /* Sources */ = {
@@ -566,7 +507,6 @@
 		};
 		AB586FA21A173F8300E8D00E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8871DE7A68C3057EBD952A3B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -584,7 +524,6 @@
 		};
 		AB586FA31A173F8300E8D00E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44394993D4F02E684A52C292 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
