@@ -7,7 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		751C37371C569BB800777DEC /* BLIConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 751C37361C569BB800777DEC /* BLIConstants.m */; };
 		752D67A41A5BFC8F0099045E /* BLIFacadeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 752D67A31A5BFC8F0099045E /* BLIFacadeManager.m */; };
+		7563CD681BE802F600BC337D /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD631BE802F600BC337D /* FBAudienceNetwork.framework */; };
+		7563CD691BE802F600BC337D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD641BE802F600BC337D /* FBSDKCoreKit.framework */; };
+		7563CD6A1BE802F600BC337D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD651BE802F600BC337D /* FBSDKLoginKit.framework */; };
+		7563CD6B1BE802F600BC337D /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD661BE802F600BC337D /* FBSDKMessengerShareKit.framework */; };
+		7563CD6C1BE802F600BC337D /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD671BE802F600BC337D /* FBSDKShareKit.framework */; };
+		7563CD6E1BE8043700BC337D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD6D1BE8043700BC337D /* AVFoundation.framework */; };
+		7563CD701BE8045700BC337D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD6F1BE8045700BC337D /* CoreMedia.framework */; };
+		7563CD721BE8046F00BC337D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD711BE8046F00BC337D /* AdSupport.framework */; };
+		7563CD741BE8048900BC337D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD731BE8048900BC337D /* CoreMotion.framework */; };
+		7563CD761BE804A400BC337D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD751BE804A400BC337D /* StoreKit.framework */; };
 		AB586F841A173F8200E8D00E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586F831A173F8200E8D00E /* main.m */; };
 		AB586F8F1A173F8200E8D00E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB586F8E1A173F8200E8D00E /* Images.xcassets */; };
 		AB586F921A173F8200E8D00E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB586F901A173F8200E8D00E /* LaunchScreen.xib */; };
@@ -39,9 +50,21 @@
 
 /* Begin PBXFileReference section */
 		44394993D4F02E684A52C292 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		751C37351C569BB800777DEC /* BLIConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLIConstants.h; sourceTree = "<group>"; };
+		751C37361C569BB800777DEC /* BLIConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLIConstants.m; sourceTree = "<group>"; };
 		752D67A21A5BFC8F0099045E /* BLIFacadeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLIFacadeManager.h; sourceTree = "<group>"; };
 		752D67A31A5BFC8F0099045E /* BLIFacadeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLIFacadeManager.m; sourceTree = "<group>"; };
 		752D67A61A5C297C0099045E /* Blinch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blinch-Prefix.pch"; sourceTree = "<group>"; };
+		7563CD631BE802F600BC337D /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBAudienceNetwork.framework; path = 3rd/FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		7563CD641BE802F600BC337D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = 3rd/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		7563CD651BE802F600BC337D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = 3rd/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		7563CD661BE802F600BC337D /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = 3rd/FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		7563CD671BE802F600BC337D /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = 3rd/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		7563CD6D1BE8043700BC337D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7563CD6F1BE8045700BC337D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		7563CD711BE8046F00BC337D /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		7563CD731BE8048900BC337D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		7563CD751BE804A400BC337D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		8871DE7A68C3057EBD952A3B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AB586F7E1A173F8200E8D00E /* Blinch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blinch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB586F821A173F8200E8D00E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,7 +104,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7563CD761BE804A400BC337D /* StoreKit.framework in Frameworks */,
+				7563CD741BE8048900BC337D /* CoreMotion.framework in Frameworks */,
+				7563CD721BE8046F00BC337D /* AdSupport.framework in Frameworks */,
+				7563CD701BE8045700BC337D /* CoreMedia.framework in Frameworks */,
+				7563CD6E1BE8043700BC337D /* AVFoundation.framework in Frameworks */,
 				D1DEFA78AC7EA5D5C689A6C5 /* libPods.a in Frameworks */,
+				7563CD691BE802F600BC337D /* FBSDKCoreKit.framework in Frameworks */,
+				7563CD6C1BE802F600BC337D /* FBSDKShareKit.framework in Frameworks */,
+				7563CD6B1BE802F600BC337D /* FBSDKMessengerShareKit.framework in Frameworks */,
+				7563CD6A1BE802F600BC337D /* FBSDKLoginKit.framework in Frameworks */,
+				7563CD681BE802F600BC337D /* FBAudienceNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +205,8 @@
 		AB586F801A173F8200E8D00E /* Blinch */ = {
 			isa = PBXGroup;
 			children = (
+				751C37351C569BB800777DEC /* BLIConstants.h */,
+				751C37361C569BB800777DEC /* BLIConstants.m */,
 				752D67A11A5BFC360099045E /* Integration */,
 				752D67A01A5BFC250099045E /* UI */,
 				752D679F1A5BFC020099045E /* Business */,
@@ -244,6 +279,16 @@
 		AFF862416C3CE3F04277F2B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7563CD751BE804A400BC337D /* StoreKit.framework */,
+				7563CD731BE8048900BC337D /* CoreMotion.framework */,
+				7563CD711BE8046F00BC337D /* AdSupport.framework */,
+				7563CD6F1BE8045700BC337D /* CoreMedia.framework */,
+				7563CD6D1BE8043700BC337D /* AVFoundation.framework */,
+				7563CD631BE802F600BC337D /* FBAudienceNetwork.framework */,
+				7563CD641BE802F600BC337D /* FBSDKCoreKit.framework */,
+				7563CD651BE802F600BC337D /* FBSDKLoginKit.framework */,
+				7563CD661BE802F600BC337D /* FBSDKMessengerShareKit.framework */,
+				7563CD671BE802F600BC337D /* FBSDKShareKit.framework */,
 				AC237BED1ACE80F6B3109222 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -395,6 +440,7 @@
 				AB586FAB1A17495100E8D00E /* BLIHistoryTableViewController.m in Sources */,
 				AB586FBD1A174A3E00E8D00E /* BLILotteryViewController.m in Sources */,
 				AB586FBB1A174A3E00E8D00E /* BLIDrawPartnerViewController.m in Sources */,
+				751C37371C569BB800777DEC /* BLIConstants.m in Sources */,
 				AB586F841A173F8200E8D00E /* main.m in Sources */,
 				AB586FB91A174A3E00E8D00E /* BLIRegistrationViewController.m in Sources */,
 			);
@@ -512,9 +558,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/3rd",
+				);
 				INFOPLIST_FILE = Blinch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blinch.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -525,9 +576,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/3rd",
+				);
 				INFOPLIST_FILE = Blinch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blinch.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

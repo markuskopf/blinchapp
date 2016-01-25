@@ -9,14 +9,17 @@
 #import "BLIRegistrationViewController.h"
 #import "BLICheckInViewController.h"
 #import "BLIFacadeManager.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import "BLIConstants.h"
 
 
 @interface BLIRegistrationViewController ()
+
 @property (weak, nonatomic) IBOutlet UIButton *sendRegistrationDetailsButton;
 @property (weak, nonatomic) IBOutlet UITextField *registrationEmailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *registrationNameTextField;
-
-
+@property (strong, nonatomic) NSURLSession *session;
 
 // action section
 - (IBAction)serverTestPressed:(id)sender;
@@ -27,8 +30,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+//    
+//    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+//    loginButton.center = self.view.center;
+//    [self.view addSubview:loginButton];
+//    
+
+    [self configureSession];
 }
+
+- (void)configureSession {
+    
+    NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration ephemeralSessionConfiguration];
+    sessionConfiguration.HTTPCookieAcceptPolicy = NSHTTPCookieAcceptPolicyNever;
+    sessionConfiguration.HTTPCookieStorage = nil;
+    sessionConfiguration.HTTPShouldSetCookies = NO;
+    sessionConfiguration.URLCredentialStorage = nil;
+    sessionConfiguration.URLCache = nil;
+    sessionConfiguration.timeoutIntervalForRequest = 10.0;
+    sessionConfiguration.TLSMinimumSupportedProtocol = kTLSProtocol12;
+    [sessionConfiguration setHTTPAdditionalHeaders:@{@"Authorization": BLIAuthenticationValue}];
+    
+    _session = [NSURLSession sessionWithConfiguration:sessionConfiguration
+                                             delegate:nil
+                                        delegateQueue:nil];
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -210,34 +238,51 @@
     
     NSString *username = self.registrationNameTextField.text;
     NSString *usermail = self.registrationEmailTextField.text;
+
+    NSString *blinchURL = @"http://localhost:8080/api/v1/customers/Kopf";
+    NSMutableURLRequest *customersRequest = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:blinchURL]];
+    customersRequest.HTTPMethod = @"GET";
     
     
-    NSLog(@"");
-    
-    
-    NSString *blinchURL = @"http://blinchapp.com:8080/v1/status";
-    
-    NSURLSession *session = [NSURLSession sharedSession];
-    
-    [[session dataTaskWithURL:[NSURL URLWithString:blinchURL] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+    NSURLSessionDataTask *dataTask = [self.session dataTaskWithRequest:customersRequest
+                                                     completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
-        NSDictionary *responseData = (NSDictionary*)[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+        NSError *jsonError = nil;
         
-        dispatch_async(dispatch_get_main_queue(), ^{
-            if (!error) {
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Server Message" message:[responseData valueForKey:@"message"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                [alert show];
-                
-                
-            } else {
-                UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Server Message" message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                [errorAlert show];
-            }
-        });
+        id returnValue = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&jsonError];
         
+        if (error!=nil) {
+            NSLog(@"");
+        }
+
+        NSLog(@"Return data: %@", returnValue);
         
-        
-    }] resume];
+    }];
+    
+    
+    [dataTask resume];
+    
+    
+    
+//    [[self.session dataTaskWithURL:[NSURL URLWithString:blinchURL] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+//        
+//        NSDictionary *responseData = (NSDictionary*)[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+//        
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            if (!error) {
+//                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Server Message" message:[responseData valueForKey:@"message"] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+//                [alert show];
+//                
+//                
+//            } else {
+//                UIAlertView *errorAlert = [[UIAlertView alloc] initWithTitle:@"Server Message" message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+//                [errorAlert show];
+//            }
+//        });
+//        
+//        
+//        
+//    }] resume];
     
 }
 
