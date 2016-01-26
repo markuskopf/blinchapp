@@ -7,14 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-@class BLIRegistrationProcessingViewController;
+@class BLIRegistrationViewController;
 
 @protocol BLIRegistrationDelegate <NSObject>
 
 /**
  * Called after the user has succefully registered to the system.
  */
-- (void)registrationViewControllerDidFinish:(BLIRegistrationProcessingViewController *)loginViewController;
+- (void)registrationViewControllerDidFinish:(BLIRegistrationViewController *)registrationViewController;
 
 /**
  * highlights errors arising from the login process.

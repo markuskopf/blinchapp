@@ -166,6 +166,7 @@
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
+                                    <action selector="loginPressed:" destination="uur-Zt-3G3" eventType="touchUpInside" id="BGN-wV-KGn"/>
                                     <action selector="sendRegistrationDetailsButton:" destination="Van-Vk-cAZ" eventType="touchUpInside" id="yw8-Ta-XHz"/>
                                 </connections>
                             </button>
@@ -684,8 +685,8 @@
                         <outlet property="registrationFirstNameTextField" destination="IRq-3V-3rn" id="ZrU-Ov-81t"/>
                         <outlet property="registrationLastNameTextField" destination="cJx-Ni-cQ0" id="pQA-W0-K79"/>
                         <outlet property="sendRegistrationDetailsButton" destination="Ig2-6k-9WU" id="hcK-HP-Qpg"/>
-                        <segue destination="ZMM-zB-hDH" kind="show" identifier="segueCheckin" id="WNp-k7-pi1"/>
                         <segue destination="EUo-El-sN2" kind="show" identifier="BLIRegistrationProcessSegue" id="4UZ-zy-1lA"/>
+                        <segue destination="ZMM-zB-hDH" kind="show" identifier="BLIHomeSegue" id="xuu-cu-k95"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="No6-Rr-EoE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -876,14 +877,35 @@
                     <view key="view" contentMode="scaleToFill" id="sSK-Xo-EPd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="xTm-XY-Mg1">
+                                <rect key="frame" x="282" y="281" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registering ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6b-xz-6hh">
+                                <rect key="frame" x="209.5" y="362" width="181.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.36862745099999999" green="0.70588235290000001" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="f6b-xz-6hh" firstAttribute="top" secondItem="xTm-XY-Mg1" secondAttribute="bottom" constant="43.5" id="7oD-ee-RI8"/>
+                            <constraint firstItem="xTm-XY-Mg1" firstAttribute="centerY" secondItem="sSK-Xo-EPd" secondAttribute="centerY" id="Dj4-Yp-9Ka"/>
+                            <constraint firstItem="f6b-xz-6hh" firstAttribute="centerX" secondItem="sSK-Xo-EPd" secondAttribute="centerX" id="EVG-lQ-glz"/>
+                            <constraint firstItem="xTm-XY-Mg1" firstAttribute="centerX" secondItem="sSK-Xo-EPd" secondAttribute="centerX" id="XQ7-1m-EN7"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="processingIndicator" destination="xTm-XY-Mg1" id="VGC-xL-FXv"/>
+                        <outlet property="registeringLabel" destination="f6b-xz-6hh" id="64e-L7-wBp"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="2782" y="2528"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="WNp-k7-pi1"/>
+        <segue reference="VHZ-0s-zyC"/>
     </inferredMetricsTieBreakers>
 </document>

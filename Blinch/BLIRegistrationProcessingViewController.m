@@ -9,6 +9,8 @@
 #import "BLIRegistrationProcessingViewController.h"
 
 @interface BLIRegistrationProcessingViewController ()
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *processingIndicator;
+@property (weak, nonatomic) IBOutlet UILabel *registeringLabel;
 
 @end
 
@@ -27,7 +29,10 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    [self registerWithFirstName:nil lastName:nil email:nil];
+    [self.processingIndicator startAnimating];
+    [self.navigationItem setHidesBackButton:YES animated:YES];
+
+    [self registerWithFirstName:self.firstName lastName:self.lastName email:self.email];
 }
 
 
@@ -37,6 +42,7 @@
     NSMutableURLRequest *customersRequest = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:blinchURL]];
     customersRequest.HTTPMethod = @"GET";
     
+    BLIRegistrationProcessingViewController * __weak weakSelf = self;
     
     NSURLSessionDataTask *dataTask = [self.session dataTaskWithRequest:customersRequest
                                                      completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
@@ -44,20 +50,21 @@
                                                          NSError *jsonError = nil;
                                                          
                                                          id returnValue = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&jsonError];
-                                                         
-                                                         if (error!=nil) {
-                                                             NSLog(@"Error desc: %@", error.description);
-                                                             
-                                                         } else {
-                                                             // success forwards to landing view controller
-                                                             NSLog(@"Return data: %@", returnValue);
+                  
+                                                         __strong typeof(weakSelf)strongSelf = weakSelf;
+                                                         if([strongSelf.delegate conformsToProtocol:@protocol(BLIRegistrationDelegate)]) {
+                                                             if (error!=nil) {
+                                                                 [weakSelf.delegate registrationDidFailWithError:error];
+                                                             } else {
+                                                                 // success forwards to landing view controller
+                                                                 NSLog(@"Return data: %@", returnValue);
+                                                                 
+                                                                 [strongSelf.delegate registrationViewControllerDidFinish:(BLIRegistrationViewController *)strongSelf.delegate];
+                                                             }
                                                          }
-                                                         
                                                      }];
     
-    
     [dataTask resume];
-
 
 }
 

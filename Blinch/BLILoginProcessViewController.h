@@ -7,14 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-@class BLILoginProcessViewController;
+@class BLILoginViewController;
 
 @protocol BLILoginProcessViewControllerDelegate <NSObject>
 
 /**
  * Called after the user has succefully logged into the system.
  */
-- (void)loginViewControllerDidFinish:(BLILoginProcessViewController *)loginViewController;
+- (void)loginViewControllerDidFinish:(BLILoginViewController *)loginViewController;
 
 /**
  * highlights errors arising from the login process.

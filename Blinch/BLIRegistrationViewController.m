@@ -1,4 +1,4 @@
-//
+
 //  BlunchRegistrationViewController.m
 //  Blunch
 //
@@ -34,7 +34,6 @@
     
     // listen to text field change and sanity the input.
     [self.registrationFirstNameTextField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
-
     [self.registrationLastNameTextField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
     [self.registrationEmailTextField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
     
@@ -163,8 +162,11 @@
 
     if ([segue.identifier isEqualToString:BLIRegistrationProcessSegue]) {
         BLIRegistrationProcessingViewController *registrationProcessViewController = (BLIRegistrationProcessingViewController *)segue.destinationViewController;
+        registrationProcessViewController.session = self.session;
         registrationProcessViewController.delegate = self;
-
+        registrationProcessViewController.firstName = self.registrationFirstNameTextField.text;
+        registrationProcessViewController.lastName = self.registrationLastNameTextField.text;
+        registrationProcessViewController.email = self.registrationEmailTextField.text;
     }
 
 }
@@ -198,8 +200,7 @@
 #pragma mark - SendRegistrationDetails
 
 - (IBAction) sendRegistrationDetailsButton:(id)sender {
-    
-   // TODO:
+    [self performSegueWithIdentifier:BLIRegistrationProcessSegue sender:nil];
 }
 
 
@@ -209,8 +210,10 @@
  * Called after the user has succefully registered to the system.
  */
 
-- (void)registrationViewControllerDidFinish:(BLIRegistrationProcessingViewController *)loginViewController {
+- (void)registrationViewControllerDidFinish:(BLIRegistrationViewController *)registrationViewController {
     
+    [registrationViewController performSegueWithIdentifier:BLIHomeSegue sender:nil];
+
 }
 
 /**

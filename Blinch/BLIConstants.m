@@ -19,3 +19,4 @@ NSString * const BLILoginSegue = @"BLILoginSegue";
 NSString * const BLILoginProcessSegue = @"BLILoginProcessSegue";
 NSString * const BLIRegistrationProcessSegue = @"BLIRegistrationProcessSegue";
 NSString * const BLICheckinSegue = @"BLICheckinSegue";
+NSString * const BLIHomeSegue = @"BLIHomeSegue";

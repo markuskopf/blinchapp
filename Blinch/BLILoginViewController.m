@@ -8,6 +8,7 @@
 
 #import "BLILoginViewController.h"
 #import "BLILoginProcessViewController.h"
+#import "BLIConstants.h"
 
 @interface BLILoginViewController () <BLILoginProcessViewControllerDelegate>
 
@@ -25,16 +26,23 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+    
+    if ([segue.identifier isEqualToString:BLILoginProcessSegue]) {
+        BLILoginProcessViewController *destinationViewController = (BLILoginProcessViewController*)segue.destinationViewController;
+        destinationViewController.delegate = self;
+    }
 
+}
+
+
+- (IBAction)loginPressed:(id)sender {
+     [self performSegueWithIdentifier:BLILoginProcessSegue sender:nil];
+    
+}
 
 #pragma mark - BLILoginProcessViewController
 
@@ -42,7 +50,7 @@
  * Called after the user has succefully logged into the system.
  */
 - (void)loginViewControllerDidFinish:(BLILoginProcessViewController *)loginViewController {
-    
+    [loginViewController performSegueWithIdentifier:BLICheckinSegue sender:nil];
 }
 
 /**
