@@ -123,10 +123,10 @@
         [sender isEqual:self.registrationEmailTextField])
     {
         //move the main view, so that the keyboard does not hide it.
-        if  (self.view.frame.origin.y >= 0)
-        {
-            [self setViewMovedUp:YES];
-        }
+//        if  (self.view.frame.origin.y >= 0)
+//        {
+//            [self setViewMovedUp:YES];
+//        }
     }
 }
 
