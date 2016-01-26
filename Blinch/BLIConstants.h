@@ -17,4 +17,5 @@ FOUNDATION_EXPORT NSString * const BLIAuthenticationValue;
 FOUNDATION_EXPORT NSString * const BLIRegistrationSegue;
 FOUNDATION_EXPORT NSString * const BLILoginSegue;
 FOUNDATION_EXPORT NSString * const BLILoginProcessSegue;
+FOUNDATION_EXPORT NSString * const BLIRegistrationProcessSegue;
 FOUNDATION_EXPORT NSString * const BLICheckinSegue;

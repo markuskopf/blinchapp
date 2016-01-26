@@ -53,7 +53,6 @@ static BLIFacadeManager *sharedInstance = nil;
 
 
 
-
 - (BOOL)registration:(NSString *)mail name:(NSString*)name
 {
     
@@ -67,6 +66,14 @@ static BLIFacadeManager *sharedInstance = nil;
 {
         
     return YES;
+}
+
+- (void)checkin {
+    
+}
+
+- (void)checkout {
+    
 }
 
 

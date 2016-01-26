@@ -9,34 +9,35 @@
 #import "BLIRegistrationViewController.h"
 #import "BLICheckInViewController.h"
 #import "BLIFacadeManager.h"
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-#import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import "BLIConstants.h"
+#import "BLIRegistrationProcessingViewController.h"
 
 
 @interface BLIRegistrationViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *sendRegistrationDetailsButton;
 @property (weak, nonatomic) IBOutlet UITextField *registrationEmailTextField;
-@property (weak, nonatomic) IBOutlet UITextField *registrationNameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *registrationFirstNameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *registrationLastNameTextField;
+
 @property (strong, nonatomic) NSURLSession *session;
 
-// action section
-- (IBAction)serverTestPressed:(id)sender;
 
 @end
 
 @implementation BLIRegistrationViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-//    
-//    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
-//    loginButton.center = self.view.center;
-//    [self.view addSubview:loginButton];
-//    
+    [super viewDidLoad]; 
 
     [self configureSession];
+    
+    // listen to text field change and sanity the input.
+    [self.registrationFirstNameTextField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
+
+    [self.registrationLastNameTextField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
+    [self.registrationEmailTextField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
+    
 }
 
 - (void)configureSession {
@@ -54,9 +55,7 @@
     _session = [NSURLSession sessionWithConfiguration:sessionConfiguration
                                              delegate:nil
                                         delegateQueue:nil];
-    
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -119,7 +118,8 @@
 
 -(void)textFieldDidBeginEditing:(UITextField *)sender
 {
-    if ([sender isEqual:self.registrationNameTextField] ||
+    if ([sender isEqual:self.registrationFirstNameTextField] ||
+        [sender isEqual:self.registrationLastNameTextField]||
         [sender isEqual:self.registrationEmailTextField])
     {
         //move the main view, so that the keyboard does not hide it.
@@ -157,25 +157,22 @@
 }
 
 
-
-
-/*
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
+    if ([segue.identifier isEqualToString:BLIRegistrationProcessSegue]) {
+        BLIRegistrationProcessingViewController *registrationProcessViewController = (BLIRegistrationProcessingViewController *)segue.destinationViewController;
+        registrationProcessViewController.delegate = self;
+
+    }
+
+}
 
 #pragma mark - AlertViewDelegate
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    
-    
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *weekdayCalendar = [calendar components:(NSCalendarUnitWeekday)
                                                     fromDate:[NSDate date]];
@@ -191,36 +188,36 @@
     
 }
 
+#pragma mark Text Field Input Validation Methods
+
+-(void)textFieldDidChange:(UITextField*) sender {
+    // validate if .count > 0
+}
+
 
 #pragma mark - SendRegistrationDetails
 
 - (IBAction) sendRegistrationDetailsButton:(id)sender {
     
-    NSString *username = self.registrationNameTextField.text;
-    NSString *usermail = self.registrationEmailTextField.text;
+   // TODO:
+}
 
-    NSString *blinchURL = @"http://localhost:8080/api/v1/customers/Kopf";
-    NSMutableURLRequest *customersRequest = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:blinchURL]];
-    customersRequest.HTTPMethod = @"GET";
-    
-    
-    NSURLSessionDataTask *dataTask = [self.session dataTaskWithRequest:customersRequest
-                                                     completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        
-        NSError *jsonError = nil;
-        
-        id returnValue = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&jsonError];
-        
-        if (error!=nil) {
-            NSLog(@"");
-        }
 
-        NSLog(@"Return data: %@", returnValue);
-        
-    }];
+#pragma mark - BLIRegistrationDelegate
+
+/**
+ * Called after the user has succefully registered to the system.
+ */
+
+- (void)registrationViewControllerDidFinish:(BLIRegistrationProcessingViewController *)loginViewController {
     
-    
-    [dataTask resume];
+}
+
+/**
+ * highlights errors arising from the login process.
+ */
+
+- (void)registrationDidFailWithError:(NSError *)error {
     
 }
 

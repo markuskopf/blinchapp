@@ -10,8 +10,6 @@
 
 @interface BLILoginProcessViewController ()
 
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
-
 @property (weak, nonatomic) IBOutlet UILabel *logginInLabel;
 
 @end
@@ -22,7 +20,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self.indicator startAnimating];
     
 }
 

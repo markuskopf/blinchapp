@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BLIRegistrationProcessingViewController.h"
 
-@interface BLIRegistrationViewController : UIViewController <UITextFieldDelegate, UIAlertViewDelegate>
+@interface BLIRegistrationViewController : UIViewController <UITextFieldDelegate, UIAlertViewDelegate, BLIRegistrationDelegate>
+
 
 @end
 

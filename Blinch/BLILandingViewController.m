@@ -33,7 +33,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     if ([segue.identifier isEqualToString:BLIRegistrationSegue]) {
-        // handle data if necessary
+        
     } else if ([segue.identifier isEqualToString:BLILoginSegue]) {
         // handle data if necessary
     }

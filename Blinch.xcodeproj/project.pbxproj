@@ -17,6 +17,7 @@
 		75731EF61C56AF9100330424 /* BLILandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75731EF51C56AF9100330424 /* BLILandingViewController.m */; };
 		75731EFB1C56B44F00330424 /* BLILoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75731EFA1C56B44F00330424 /* BLILoginViewController.m */; };
 		75731EFE1C56C5FB00330424 /* BLILoginProcessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75731EFD1C56C5FB00330424 /* BLILoginProcessViewController.m */; };
+		75731F011C56E17C00330424 /* BLIRegistrationProcessingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75731F001C56E17C00330424 /* BLIRegistrationProcessingViewController.m */; };
 		AB586F841A173F8200E8D00E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586F831A173F8200E8D00E /* main.m */; };
 		AB586F8F1A173F8200E8D00E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB586F8E1A173F8200E8D00E /* Images.xcassets */; };
 		AB586F921A173F8200E8D00E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB586F901A173F8200E8D00E /* LaunchScreen.xib */; };
@@ -67,6 +68,8 @@
 		75731EFA1C56B44F00330424 /* BLILoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLILoginViewController.m; sourceTree = "<group>"; };
 		75731EFC1C56C5FB00330424 /* BLILoginProcessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLILoginProcessViewController.h; sourceTree = "<group>"; };
 		75731EFD1C56C5FB00330424 /* BLILoginProcessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLILoginProcessViewController.m; sourceTree = "<group>"; };
+		75731EFF1C56E17C00330424 /* BLIRegistrationProcessingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLIRegistrationProcessingViewController.h; sourceTree = "<group>"; };
+		75731F001C56E17C00330424 /* BLIRegistrationProcessingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLIRegistrationProcessingViewController.m; sourceTree = "<group>"; };
 		AB586F7E1A173F8200E8D00E /* Blinch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blinch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB586F821A173F8200E8D00E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB586F831A173F8200E8D00E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -146,8 +149,12 @@
 				75731EF51C56AF9100330424 /* BLILandingViewController.m */,
 				75731EF91C56B44F00330424 /* BLILoginViewController.h */,
 				75731EFA1C56B44F00330424 /* BLILoginViewController.m */,
+				75731EFC1C56C5FB00330424 /* BLILoginProcessViewController.h */,
+				75731EFD1C56C5FB00330424 /* BLILoginProcessViewController.m */,
 				AB586FAF1A174A3E00E8D00E /* BLIRegistrationViewController.h */,
 				AB586FB01A174A3E00E8D00E /* BLIRegistrationViewController.m */,
+				75731EFF1C56E17C00330424 /* BLIRegistrationProcessingViewController.h */,
+				75731F001C56E17C00330424 /* BLIRegistrationProcessingViewController.m */,
 				AB586FB11A174A3E00E8D00E /* BLICheckInViewController.h */,
 				AB586FB21A174A3E00E8D00E /* BLICheckInViewController.m */,
 				AB586FB31A174A3E00E8D00E /* BLIDrawPartnerViewController.h */,
@@ -161,8 +168,6 @@
 				AB586FA81A17495100E8D00E /* BLIHistoryTableViewController.m */,
 				AB586FA91A17495100E8D00E /* BLIHistoryTableViewCell.h */,
 				AB586FAA1A17495100E8D00E /* BLIHistoryTableViewCell.m */,
-				75731EFC1C56C5FB00330424 /* BLILoginProcessViewController.h */,
-				75731EFD1C56C5FB00330424 /* BLILoginProcessViewController.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -198,10 +203,10 @@
 			children = (
 				751C37351C569BB800777DEC /* BLIConstants.h */,
 				751C37361C569BB800777DEC /* BLIConstants.m */,
-				752D67A11A5BFC360099045E /* Integration */,
 				752D67A01A5BFC250099045E /* UI */,
-				752D679F1A5BFC020099045E /* Business */,
 				752D679E1A5BFBF50099045E /* Facade */,
+				752D679F1A5BFC020099045E /* Business */,
+				752D67A11A5BFC360099045E /* Integration */,
 				AB586FC41A17502200E8D00E /* AppDelegate.h */,
 				AB586FC51A17502200E8D00E /* AppDelegate.m */,
 				AB586F8E1A173F8200E8D00E /* Images.xcassets */,
@@ -329,7 +334,7 @@
 		AB586F761A173F8200E8D00E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Oberst Tanja";
 				TargetAttributes = {
 					AB586F7D1A173F8200E8D00E = {
@@ -388,6 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75731F011C56E17C00330424 /* BLIRegistrationProcessingViewController.m in Sources */,
 				AB586FAC1A17495100E8D00E /* BLIHistoryTableViewCell.m in Sources */,
 				752D67A41A5BFC8F0099045E /* BLIFacadeManager.m in Sources */,
 				AB586FBC1A174A3E00E8D00E /* BLIPickerView.m in Sources */,
@@ -455,6 +461,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -559,6 +566,7 @@
 				);
 				INFOPLIST_FILE = BlinchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BLI.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blinch.app/Blinch";
 			};
@@ -574,6 +582,7 @@
 				);
 				INFOPLIST_FILE = BlinchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "BLI.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blinch.app/Blinch";
 			};

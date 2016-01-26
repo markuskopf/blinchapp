@@ -7,8 +7,9 @@
 //
 
 #import "BLILoginViewController.h"
+#import "BLILoginProcessViewController.h"
 
-@interface BLILoginViewController () 
+@interface BLILoginViewController () <BLILoginProcessViewControllerDelegate>
 
 @end
 
@@ -35,9 +36,11 @@
 */
 
 
+#pragma mark - BLILoginProcessViewController
 
-#pragma mark - BLILoginProcessViewControllerDelegate
-
+/**
+ * Called after the user has succefully logged into the system.
+ */
 - (void)loginViewControllerDidFinish:(BLILoginProcessViewController *)loginViewController {
     
 }
@@ -45,9 +48,9 @@
 /**
  * highlights errors arising from the login process.
  */
-
 - (void)loginDidFailWithError:(NSError *)error {
     
 }
+
 
 @end

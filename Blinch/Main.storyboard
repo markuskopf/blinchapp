@@ -224,7 +224,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="indicator" destination="DZx-b7-me8" id="Bzc-Vu-mPT"/>
                         <outlet property="logginInLabel" destination="we0-zM-hUV" id="YJ5-pA-N9h"/>
                     </connections>
                 </viewController>
@@ -576,7 +575,7 @@
                                     <constraint firstAttribute="height" constant="50" id="HvD-TS-6RO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="HvD-TS-6RO"/>
@@ -676,10 +675,11 @@
                     </navigationItem>
                     <connections>
                         <outlet property="registrationEmailTextField" destination="9MH-a4-r64" id="n1n-xP-haX"/>
-                        <outlet property="registrationNameTextField" destination="IRq-3V-3rn" id="VNj-0E-rDp"/>
+                        <outlet property="registrationFirstNameTextField" destination="IRq-3V-3rn" id="ZrU-Ov-81t"/>
+                        <outlet property="registrationLastNameTextField" destination="cJx-Ni-cQ0" id="pQA-W0-K79"/>
                         <outlet property="sendRegistrationDetailsButton" destination="Ig2-6k-9WU" id="hcK-HP-Qpg"/>
                         <segue destination="ZMM-zB-hDH" kind="show" identifier="segueCheckin" id="WNp-k7-pi1"/>
-                        <segue destination="EUo-El-sN2" kind="show" id="4UZ-zy-1lA"/>
+                        <segue destination="EUo-El-sN2" kind="show" identifier="BLIRegistrationProcessSegue" id="4UZ-zy-1lA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="No6-Rr-EoE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -857,10 +857,11 @@
             </objects>
             <point key="canvasLocation" x="4274" y="2561"/>
         </scene>
-        <!--View Controller-->
+        <!--Registration Processing View Controller-->
         <scene sceneID="Zfz-lE-mDt">
             <objects>
-                <viewController id="EUo-El-sN2" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LM2-mP-TWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="EUo-El-sN2" customClass="BLIRegistrationProcessingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gxU-Ku-uZI"/>
                         <viewControllerLayoutGuide type="bottom" id="Jbg-Pe-fZz"/>
@@ -868,36 +869,14 @@
                     <view key="view" contentMode="scaleToFill" id="sSK-Xo-EPd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="V0G-iX-QuF">
-                                <rect key="frame" x="282" y="267" width="37" height="37"/>
-                            </activityIndicatorView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6g8-78-9hv">
-                                <rect key="frame" x="208" y="345" width="184.5" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" red="0.36862745099999999" green="0.70588235290000001" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="V0G-iX-QuF" firstAttribute="top" secondItem="gxU-Ku-uZI" secondAttribute="bottom" constant="247" id="I3l-dS-JnP"/>
-                            <constraint firstItem="6g8-78-9hv" firstAttribute="centerX" secondItem="sSK-Xo-EPd" secondAttribute="centerX" id="QGn-BI-dl6"/>
-                            <constraint firstItem="6g8-78-9hv" firstAttribute="top" secondItem="V0G-iX-QuF" secondAttribute="bottom" constant="41" id="mbj-wO-GmO"/>
-                            <constraint firstItem="V0G-iX-QuF" firstAttribute="centerX" secondItem="sSK-Xo-EPd" secondAttribute="centerX" id="usG-1W-Tzz"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="indicator" destination="V0G-iX-QuF" id="B41-8w-wzi"/>
-                        <outlet property="logginInLabel" destination="6g8-78-9hv" id="86h-Yg-gzy"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LM2-mP-TWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2782" y="2528"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VHZ-0s-zyC"/>
+        <segue reference="WNp-k7-pi1"/>
     </inferredMetricsTieBreakers>
 </document>
