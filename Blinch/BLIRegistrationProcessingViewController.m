@@ -38,9 +38,22 @@
 
 - (void)registerWithFirstName:(NSString *)firstName lastName:(NSString *)lastName email:(NSString *)email {
     
-    NSString *blinchURL = @"http://localhost:8080/api/v1/customers/Kopf";
+    NSString *blinchURL = @"http://localhost:8080/api/v1/customers";
     NSMutableURLRequest *customersRequest = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:blinchURL]];
-    customersRequest.HTTPMethod = @"GET";
+    customersRequest.HTTPMethod = @"POST";
+    
+    
+    NSDictionary *postData = @{@"firstName": firstName,
+                               @"lastName" : lastName,
+                               @"emailAddress" : email};
+    
+    
+    // Convert the dictionary into JSON data.
+    NSData *JSONData = [NSJSONSerialization dataWithJSONObject:postData
+                                                       options:0
+                                                         error:nil];
+    
+    customersRequest.HTTPBody = JSONData;
     
     BLIRegistrationProcessingViewController * __weak weakSelf = self;
     
@@ -54,11 +67,13 @@
                                                          __strong typeof(weakSelf)strongSelf = weakSelf;
                                                          if([strongSelf.delegate conformsToProtocol:@protocol(BLIRegistrationDelegate)]) {
                                                              if (error!=nil) {
+                                                                 NSLog(@"Error: %@", error.localizedDescription);
+
                                                                  [weakSelf.delegate registrationDidFailWithError:error];
                                                              } else {
                                                                  // success forwards to landing view controller
                                                                  NSLog(@"Return data: %@", returnValue);
-                                                                 
+                                                                 NSLog(@"Status code: %li", (long)((NSHTTPURLResponse *)response).statusCode);
                                                                  [strongSelf.delegate registrationViewControllerDidFinish:(BLIRegistrationViewController *)strongSelf.delegate];
                                                              }
                                                          }

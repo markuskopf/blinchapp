@@ -582,7 +582,7 @@
                                     <constraint firstAttribute="height" constant="50" id="HvD-TS-6RO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="HvD-TS-6RO"/>
@@ -906,6 +906,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VHZ-0s-zyC"/>
+        <segue reference="xuu-cu-k95"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -49,7 +49,8 @@
     sessionConfiguration.URLCache = nil;
     sessionConfiguration.timeoutIntervalForRequest = 10.0;
     sessionConfiguration.TLSMinimumSupportedProtocol = kTLSProtocol12;
-    [sessionConfiguration setHTTPAdditionalHeaders:@{@"Authorization": BLIAuthenticationValue}];
+    [sessionConfiguration setHTTPAdditionalHeaders:@{@"Authorization": BLIAuthenticationValue, @"Content-Type"  : @"application/json"}];
+    
     
     _session = [NSURLSession sessionWithConfiguration:sessionConfiguration
                                              delegate:nil
