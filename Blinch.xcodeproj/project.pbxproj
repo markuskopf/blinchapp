@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		751C37371C569BB800777DEC /* BLIConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 751C37361C569BB800777DEC /* BLIConstants.m */; };
 		752D67A41A5BFC8F0099045E /* BLIFacadeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 752D67A31A5BFC8F0099045E /* BLIFacadeManager.m */; };
+		755CFF881C59A11700C13FD0 /* Blinch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 755CFF861C59A11700C13FD0 /* Blinch.xcdatamodeld */; };
+		755CFF9E1C59A2F500C13FD0 /* LunchPartner+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 755CFF971C59A2F500C13FD0 /* LunchPartner+CoreDataProperties.m */; };
+		755CFF9F1C59A2F500C13FD0 /* LunchPartner.m in Sources */ = {isa = PBXBuildFile; fileRef = 755CFF991C59A2F500C13FD0 /* LunchPartner.m */; };
+		755CFFA01C59A2F500C13FD0 /* Lunch+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 755CFF9B1C59A2F500C13FD0 /* Lunch+CoreDataProperties.m */; };
+		755CFFA11C59A2F500C13FD0 /* Lunch.m in Sources */ = {isa = PBXBuildFile; fileRef = 755CFF9D1C59A2F500C13FD0 /* Lunch.m */; };
 		7563CD6E1BE8043700BC337D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD6D1BE8043700BC337D /* AVFoundation.framework */; };
 		7563CD701BE8045700BC337D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD6F1BE8045700BC337D /* CoreMedia.framework */; };
 		7563CD721BE8046F00BC337D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7563CD711BE8046F00BC337D /* AdSupport.framework */; };
@@ -52,6 +57,15 @@
 		752D67A21A5BFC8F0099045E /* BLIFacadeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLIFacadeManager.h; sourceTree = "<group>"; };
 		752D67A31A5BFC8F0099045E /* BLIFacadeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLIFacadeManager.m; sourceTree = "<group>"; };
 		752D67A61A5C297C0099045E /* Blinch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Blinch-Prefix.pch"; sourceTree = "<group>"; };
+		755CFF871C59A11700C13FD0 /* Blinch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Blinch.xcdatamodel; sourceTree = "<group>"; };
+		755CFF961C59A2F500C13FD0 /* LunchPartner+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LunchPartner+CoreDataProperties.h"; sourceTree = "<group>"; };
+		755CFF971C59A2F500C13FD0 /* LunchPartner+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LunchPartner+CoreDataProperties.m"; sourceTree = "<group>"; };
+		755CFF981C59A2F500C13FD0 /* LunchPartner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LunchPartner.h; sourceTree = "<group>"; };
+		755CFF991C59A2F500C13FD0 /* LunchPartner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LunchPartner.m; sourceTree = "<group>"; };
+		755CFF9A1C59A2F500C13FD0 /* Lunch+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Lunch+CoreDataProperties.h"; sourceTree = "<group>"; };
+		755CFF9B1C59A2F500C13FD0 /* Lunch+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Lunch+CoreDataProperties.m"; sourceTree = "<group>"; };
+		755CFF9C1C59A2F500C13FD0 /* Lunch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lunch.h; sourceTree = "<group>"; };
+		755CFF9D1C59A2F500C13FD0 /* Lunch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lunch.m; sourceTree = "<group>"; };
 		7563CD631BE802F600BC337D /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBAudienceNetwork.framework; path = 3rd/FBAudienceNetwork.framework; sourceTree = "<group>"; };
 		7563CD641BE802F600BC337D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = 3rd/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		7563CD651BE802F600BC337D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = 3rd/FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -179,6 +193,22 @@
 			name = Integration;
 			sourceTree = "<group>";
 		};
+		755CFF891C59A23E00C13FD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				755CFF961C59A2F500C13FD0 /* LunchPartner+CoreDataProperties.h */,
+				755CFF971C59A2F500C13FD0 /* LunchPartner+CoreDataProperties.m */,
+				755CFF981C59A2F500C13FD0 /* LunchPartner.h */,
+				755CFF991C59A2F500C13FD0 /* LunchPartner.m */,
+				755CFF9A1C59A2F500C13FD0 /* Lunch+CoreDataProperties.h */,
+				755CFF9B1C59A2F500C13FD0 /* Lunch+CoreDataProperties.m */,
+				755CFF9C1C59A2F500C13FD0 /* Lunch.h */,
+				755CFF9D1C59A2F500C13FD0 /* Lunch.m */,
+				755CFF861C59A11700C13FD0 /* Blinch.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		AB586F751A173F8200E8D00E = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +231,7 @@
 		AB586F801A173F8200E8D00E /* Blinch */ = {
 			isa = PBXGroup;
 			children = (
+				755CFF891C59A23E00C13FD0 /* Model */,
 				751C37351C569BB800777DEC /* BLIConstants.h */,
 				751C37361C569BB800777DEC /* BLIConstants.m */,
 				752D67A01A5BFC250099045E /* UI */,
@@ -395,15 +426,20 @@
 			files = (
 				75731F011C56E17C00330424 /* BLIRegistrationProcessingViewController.m in Sources */,
 				AB586FAC1A17495100E8D00E /* BLIHistoryTableViewCell.m in Sources */,
+				755CFFA01C59A2F500C13FD0 /* Lunch+CoreDataProperties.m in Sources */,
 				752D67A41A5BFC8F0099045E /* BLIFacadeManager.m in Sources */,
 				AB586FBC1A174A3E00E8D00E /* BLIPickerView.m in Sources */,
 				AB586FC61A17502200E8D00E /* AppDelegate.m in Sources */,
 				75731EF61C56AF9100330424 /* BLILandingViewController.m in Sources */,
 				AB586FBA1A174A3E00E8D00E /* BLICheckInViewController.m in Sources */,
+				755CFFA11C59A2F500C13FD0 /* Lunch.m in Sources */,
+				755CFF9F1C59A2F500C13FD0 /* LunchPartner.m in Sources */,
 				75731EFB1C56B44F00330424 /* BLILoginViewController.m in Sources */,
 				AB586FAB1A17495100E8D00E /* BLIHistoryTableViewController.m in Sources */,
+				755CFF9E1C59A2F500C13FD0 /* LunchPartner+CoreDataProperties.m in Sources */,
 				AB586FBD1A174A3E00E8D00E /* BLILotteryViewController.m in Sources */,
 				AB586FBB1A174A3E00E8D00E /* BLIDrawPartnerViewController.m in Sources */,
+				755CFF881C59A11700C13FD0 /* Blinch.xcdatamodeld in Sources */,
 				751C37371C569BB800777DEC /* BLIConstants.m in Sources */,
 				AB586F841A173F8200E8D00E /* main.m in Sources */,
 				75731EFE1C56C5FB00330424 /* BLILoginProcessViewController.m in Sources */,
@@ -619,6 +655,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		755CFF861C59A11700C13FD0 /* Blinch.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				755CFF871C59A11700C13FD0 /* Blinch.xcdatamodel */,
+			);
+			currentVersion = 755CFF871C59A11700C13FD0 /* Blinch.xcdatamodel */;
+			path = Blinch.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AB586F761A173F8200E8D00E /* Project object */;
 }

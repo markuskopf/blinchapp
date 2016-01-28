@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Xcode 7.0">
+    <entity name="Lunch" representedClassName="Lunch" syncable="YES">
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lunchDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="lunchPartner" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LunchPartner" inverseName="lunch" inverseEntity="LunchPartner" syncable="YES"/>
+    </entity>
+    <entity name="LunchPartner" representedClassName="LunchPartner" syncable="YES">
+        <attribute name="mail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="lunch" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Lunch" inverseName="lunchPartner" inverseEntity="Lunch" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Lunch" positionX="-3771" positionY="-1753" width="128" height="88"/>
+        <element name="LunchPartner" positionX="-4052" positionY="-1764" width="128" height="103"/>
+    </elements>
+</model>
