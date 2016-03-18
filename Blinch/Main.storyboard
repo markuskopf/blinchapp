@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Udo-Z8-TSu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Udo-Z8-TSu">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -763,11 +763,19 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncy-t7-8OW">
+                                <rect key="frame" x="285" y="476" width="30" height="30"/>
+                                <state key="normal" title="Test"/>
+                                <connections>
+                                    <action selector="testPressed:" destination="WSD-s1-3pT" eventType="touchUpInside" id="GiE-mD-zj2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.36862745098039218" green="0.70588235294117641" blue="0.45490196078431372" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="OZM-FF-CUg" firstAttribute="leading" secondItem="g7G-ZL-Fh2" secondAttribute="leading" id="57H-E8-KTK"/>
                             <constraint firstItem="g7G-ZL-Fh2" firstAttribute="width" secondItem="OZM-FF-CUg" secondAttribute="width" id="BDm-HQ-Xam"/>
+                            <constraint firstItem="Ncy-t7-8OW" firstAttribute="centerX" secondItem="F2g-kT-0YB" secondAttribute="centerX" id="BeY-fT-n98"/>
                             <constraint firstItem="OZM-FF-CUg" firstAttribute="centerX" secondItem="F2g-kT-0YB" secondAttribute="centerX" id="EL3-Lo-6DI"/>
                             <constraint firstItem="g7G-ZL-Fh2" firstAttribute="top" secondItem="OZM-FF-CUg" secondAttribute="bottom" constant="38" id="EUZ-ug-u7p"/>
                             <constraint firstItem="g7G-ZL-Fh2" firstAttribute="width" secondItem="OZM-FF-CUg" secondAttribute="width" id="NBB-mR-QeX"/>
@@ -781,6 +789,7 @@
                             <constraint firstItem="g7G-ZL-Fh2" firstAttribute="top" secondItem="OZM-FF-CUg" secondAttribute="bottom" constant="43" id="db7-YC-JsO"/>
                             <constraint firstItem="OZM-FF-CUg" firstAttribute="centerX" secondItem="F2g-kT-0YB" secondAttribute="centerX" id="dxF-su-6KP"/>
                             <constraint firstItem="OZM-FF-CUg" firstAttribute="centerX" secondItem="F2g-kT-0YB" secondAttribute="centerX" id="eez-m7-k6r"/>
+                            <constraint firstItem="Ncy-t7-8OW" firstAttribute="top" secondItem="g7G-ZL-Fh2" secondAttribute="bottom" constant="64" id="qWT-gv-qk4"/>
                             <constraint firstItem="g7G-ZL-Fh2" firstAttribute="leading" secondItem="OZM-FF-CUg" secondAttribute="leading" id="xHU-Y0-JAd"/>
                             <constraint firstItem="OZM-FF-CUg" firstAttribute="top" secondItem="0hL-SJ-E7p" secondAttribute="bottom" constant="200" id="z4Q-Wu-7yk"/>
                         </constraints>
@@ -868,7 +877,6 @@
         <!--Registration Processing View Controller-->
         <scene sceneID="Zfz-lE-mDt">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LM2-mP-TWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="EUo-El-sN2" customClass="BLIRegistrationProcessingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gxU-Ku-uZI"/>
@@ -901,11 +909,12 @@
                         <outlet property="registeringLabel" destination="f6b-xz-6hh" id="64e-L7-wBp"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LM2-mP-TWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2782" y="2528"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xuu-cu-k95"/>
+        <segue reference="VHZ-0s-zyC"/>
     </inferredMetricsTieBreakers>
 </document>

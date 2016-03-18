@@ -11,6 +11,7 @@
 @interface BLIRegistrationProcessingViewController ()
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *processingIndicator;
 @property (weak, nonatomic) IBOutlet UILabel *registeringLabel;
+@property (copy, nonatomic) NSString *csrf_cookie;
 
 @end
 
@@ -18,6 +19,40 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+//    kopf.markus@blinch.com:12345678
+    
+    NSString *authValue = @"Basic a29wZi5tYXJrdXNAYmxpbmNoLmNvbToxMjM0NTY3OA==";
+    
+    // in a function:
+    NSURL *url = [[NSURL alloc] initWithString:@"http://localhost:8080/"];
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
+    [request setHTTPShouldHandleCookies:YES];
+    [request setAllHTTPHeaderFields:[NSHTTPCookie requestHeaderFieldsWithCookies:[[NSHTTPCookieStorage sharedHTTPCookieStorage] cookiesForURL:url]]];
+
+    [request setValue:authValue forHTTPHeaderField:@"Authorization"];
+    [request setValue:@"XMLHttpRequest" forHTTPHeaderField:@"X-Requested-With"];
+    
+    
+    
+    
+    // make GET request are store the csrf
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue]
+                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+                               NSArray *cookies = [NSHTTPCookie cookiesWithResponseHeaderFields:[(NSHTTPURLResponse *)response allHeaderFields] forURL:url];
+                               [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookies:cookies forURL:url mainDocumentURL:nil];
+                               // for some reason we need to re-store the CSRF token as X_CSRFTOKEN
+                               for (NSHTTPCookie *cookie in cookies) {
+                                   if ([cookie.name isEqualToString:@"csrftoken"]) {
+                                       self.csrf_cookie = cookie.value;
+                                       break;
+                                   }
+                               }
+                           }];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,7 +73,7 @@
 
 - (void)registerWithFirstName:(NSString *)firstName lastName:(NSString *)lastName email:(NSString *)email {
     
-    NSString *blinchURL = @"http://localhost:8080/api/v1/customers";
+    NSString *blinchURL = @"http://localhost:8080/api/v1/users";
     NSMutableURLRequest *customersRequest = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:blinchURL]];
     customersRequest.HTTPMethod = @"POST";
     

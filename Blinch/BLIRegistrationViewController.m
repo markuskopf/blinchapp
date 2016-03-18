@@ -42,9 +42,9 @@
 - (void)configureSession {
     
     NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration ephemeralSessionConfiguration];
-    sessionConfiguration.HTTPCookieAcceptPolicy = NSHTTPCookieAcceptPolicyNever;
-    sessionConfiguration.HTTPCookieStorage = nil;
-    sessionConfiguration.HTTPShouldSetCookies = NO;
+    sessionConfiguration.HTTPCookieAcceptPolicy = NSHTTPCookieAcceptPolicyAlways;
+//    sessionConfiguration.HTTPCookieStorage = nil;
+//    sessionConfiguration.HTTPShouldSetCookies = NO;
     sessionConfiguration.URLCredentialStorage = nil;
     sessionConfiguration.URLCache = nil;
     sessionConfiguration.timeoutIntervalForRequest = 10.0;
