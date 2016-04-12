@@ -52,6 +52,16 @@
                ReferencedContainer = "container:Blinch.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7575C9141CBD05B4001564FD"
+               BuildableName = "BlinchUITests.xctest"
+               BlueprintName = "BlinchUITests"
+               ReferencedContainer = "container:Blinch.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

@@ -22,6 +22,7 @@
 		75731EFB1C56B44F00330424 /* BLILoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75731EFA1C56B44F00330424 /* BLILoginViewController.m */; };
 		75731EFE1C56C5FB00330424 /* BLILoginProcessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75731EFD1C56C5FB00330424 /* BLILoginProcessViewController.m */; };
 		75731F011C56E17C00330424 /* BLIRegistrationProcessingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75731F001C56E17C00330424 /* BLIRegistrationProcessingViewController.m */; };
+		7575C9181CBD05B4001564FD /* BlinchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7575C9171CBD05B4001564FD /* BlinchUITests.m */; };
 		AB586F841A173F8200E8D00E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586F831A173F8200E8D00E /* main.m */; };
 		AB586F8F1A173F8200E8D00E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB586F8E1A173F8200E8D00E /* Images.xcassets */; };
 		AB586F921A173F8200E8D00E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB586F901A173F8200E8D00E /* LaunchScreen.xib */; };
@@ -41,6 +42,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7575C91A1CBD05B4001564FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB586F761A173F8200E8D00E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB586F7D1A173F8200E8D00E;
+			remoteInfo = Blinch;
+		};
 		AB586F981A173F8200E8D00E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AB586F761A173F8200E8D00E /* Project object */;
@@ -82,6 +90,9 @@
 		75731EFD1C56C5FB00330424 /* BLILoginProcessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLILoginProcessViewController.m; sourceTree = "<group>"; };
 		75731EFF1C56E17C00330424 /* BLIRegistrationProcessingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLIRegistrationProcessingViewController.h; sourceTree = "<group>"; };
 		75731F001C56E17C00330424 /* BLIRegistrationProcessingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLIRegistrationProcessingViewController.m; sourceTree = "<group>"; };
+		7575C9151CBD05B4001564FD /* BlinchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlinchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7575C9171CBD05B4001564FD /* BlinchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlinchUITests.m; sourceTree = "<group>"; };
+		7575C9191CBD05B4001564FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB586F7E1A173F8200E8D00E /* Blinch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blinch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB586F821A173F8200E8D00E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB586F831A173F8200E8D00E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -116,6 +127,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7575C9121CBD05B4001564FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AB586F7B1A173F8200E8D00E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,11 +224,21 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		7575C9161CBD05B4001564FD /* BlinchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7575C9171CBD05B4001564FD /* BlinchUITests.m */,
+				7575C9191CBD05B4001564FD /* Info.plist */,
+			);
+			path = BlinchUITests;
+			sourceTree = "<group>";
+		};
 		AB586F751A173F8200E8D00E = {
 			isa = PBXGroup;
 			children = (
 				AB586F801A173F8200E8D00E /* Blinch */,
 				AB586F9A1A173F8200E8D00E /* BlinchTests */,
+				7575C9161CBD05B4001564FD /* BlinchUITests */,
 				AB586F7F1A173F8200E8D00E /* Products */,
 				AFF862416C3CE3F04277F2B1 /* Frameworks */,
 			);
@@ -221,6 +249,7 @@
 			children = (
 				AB586F7E1A173F8200E8D00E /* Blinch.app */,
 				AB586F971A173F8200E8D00E /* BlinchTests.xctest */,
+				7575C9151CBD05B4001564FD /* BlinchUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -320,6 +349,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7575C9141CBD05B4001564FD /* BlinchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7575C91C1CBD05B4001564FD /* Build configuration list for PBXNativeTarget "BlinchUITests" */;
+			buildPhases = (
+				7575C9111CBD05B4001564FD /* Sources */,
+				7575C9121CBD05B4001564FD /* Frameworks */,
+				7575C9131CBD05B4001564FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7575C91B1CBD05B4001564FD /* PBXTargetDependency */,
+			);
+			name = BlinchUITests;
+			productName = BlinchUITests;
+			productReference = 7575C9151CBD05B4001564FD /* BlinchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		AB586F7D1A173F8200E8D00E /* Blinch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB586FA11A173F8300E8D00E /* Build configuration list for PBXNativeTarget "Blinch" */;
@@ -364,6 +411,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Oberst Tanja";
 				TargetAttributes = {
+					7575C9141CBD05B4001564FD = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = AB586F7D1A173F8200E8D00E;
+					};
 					AB586F7D1A173F8200E8D00E = {
 						CreatedOnToolsVersion = 6.1;
 						DevelopmentTeam = Y9J27A34XZ;
@@ -397,11 +448,19 @@
 			targets = (
 				AB586F7D1A173F8200E8D00E /* Blinch */,
 				AB586F961A173F8200E8D00E /* BlinchTests */,
+				7575C9141CBD05B4001564FD /* BlinchUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7575C9131CBD05B4001564FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AB586F7C1A173F8200E8D00E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -425,6 +484,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7575C9111CBD05B4001564FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7575C9181CBD05B4001564FD /* BlinchUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AB586F7A1A173F8200E8D00E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -463,6 +530,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7575C91B1CBD05B4001564FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB586F7D1A173F8200E8D00E /* Blinch */;
+			targetProxy = 7575C91A1CBD05B4001564FD /* PBXContainerItemProxy */;
+		};
 		AB586F991A173F8200E8D00E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AB586F7D1A173F8200E8D00E /* Blinch */;
@@ -482,6 +554,37 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7575C91D1CBD05B4001564FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = BlinchUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blinch.BlinchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Blinch;
+			};
+			name = Debug;
+		};
+		7575C91E1CBD05B4001564FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = BlinchUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.blinch.BlinchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Blinch;
+			};
+			name = Release;
+		};
 		AB586F9F1A173F8300E8D00E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -632,6 +735,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7575C91C1CBD05B4001564FD /* Build configuration list for PBXNativeTarget "BlinchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7575C91D1CBD05B4001564FD /* Debug */,
+				7575C91E1CBD05B4001564FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		AB586F791A173F8200E8D00E /* Build configuration list for PBXProject "Blinch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
