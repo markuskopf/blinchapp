@@ -23,6 +23,9 @@
 		75731EFE1C56C5FB00330424 /* BLILoginProcessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75731EFD1C56C5FB00330424 /* BLILoginProcessViewController.m */; };
 		75731F011C56E17C00330424 /* BLIRegistrationProcessingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75731F001C56E17C00330424 /* BLIRegistrationProcessingViewController.m */; };
 		7575C9181CBD05B4001564FD /* BlinchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7575C9171CBD05B4001564FD /* BlinchUITests.m */; };
+		7575C9221CBD1321001564FD /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7575C9211CBD1321001564FD /* APIClient.m */; };
+		7575C9241CBD14A4001564FD /* APIClientTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7575C9231CBD14A4001564FD /* APIClientTest.m */; };
+		7575C9271CBD2177001564FD /* HTTPRequestGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7575C9261CBD2177001564FD /* HTTPRequestGenerator.m */; };
 		AB586F841A173F8200E8D00E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586F831A173F8200E8D00E /* main.m */; };
 		AB586F8F1A173F8200E8D00E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB586F8E1A173F8200E8D00E /* Images.xcassets */; };
 		AB586F921A173F8200E8D00E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB586F901A173F8200E8D00E /* LaunchScreen.xib */; };
@@ -93,6 +96,11 @@
 		7575C9151CBD05B4001564FD /* BlinchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlinchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7575C9171CBD05B4001564FD /* BlinchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlinchUITests.m; sourceTree = "<group>"; };
 		7575C9191CBD05B4001564FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7575C9201CBD1321001564FD /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		7575C9211CBD1321001564FD /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		7575C9231CBD14A4001564FD /* APIClientTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClientTest.m; sourceTree = "<group>"; };
+		7575C9251CBD2177001564FD /* HTTPRequestGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequestGenerator.h; sourceTree = "<group>"; };
+		7575C9261CBD2177001564FD /* HTTPRequestGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequestGenerator.m; sourceTree = "<group>"; };
 		AB586F7E1A173F8200E8D00E /* Blinch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blinch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB586F821A173F8200E8D00E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB586F831A173F8200E8D00E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -204,6 +212,7 @@
 		752D67A11A5BFC360099045E /* Integration */ = {
 			isa = PBXGroup;
 			children = (
+				7575C91F1CBD12E1001564FD /* API Client */,
 			);
 			name = Integration;
 			sourceTree = "<group>";
@@ -231,6 +240,17 @@
 				7575C9191CBD05B4001564FD /* Info.plist */,
 			);
 			path = BlinchUITests;
+			sourceTree = "<group>";
+		};
+		7575C91F1CBD12E1001564FD /* API Client */ = {
+			isa = PBXGroup;
+			children = (
+				7575C9201CBD1321001564FD /* APIClient.h */,
+				7575C9211CBD1321001564FD /* APIClient.m */,
+				7575C9251CBD2177001564FD /* HTTPRequestGenerator.h */,
+				7575C9261CBD2177001564FD /* HTTPRequestGenerator.m */,
+			);
+			name = "API Client";
 			sourceTree = "<group>";
 		};
 		AB586F751A173F8200E8D00E = {
@@ -288,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				AB586F9D1A173F8300E8D00E /* BlinchTests.m */,
+				7575C9231CBD14A4001564FD /* APIClientTest.m */,
 				AB586F9B1A173F8200E8D00E /* Supporting Files */,
 			);
 			path = BlinchTests;
@@ -409,7 +430,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = "Oberst Tanja";
+				ORGANIZATIONNAME = Blinch;
 				TargetAttributes = {
 					7575C9141CBD05B4001564FD = {
 						CreatedOnToolsVersion = 7.3;
@@ -497,11 +518,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				75731F011C56E17C00330424 /* BLIRegistrationProcessingViewController.m in Sources */,
+				7575C9221CBD1321001564FD /* APIClient.m in Sources */,
 				AB586FAC1A17495100E8D00E /* BLIHistoryTableViewCell.m in Sources */,
 				755CFFA01C59A2F500C13FD0 /* Lunch+CoreDataProperties.m in Sources */,
 				752D67A41A5BFC8F0099045E /* BLIFacadeManager.m in Sources */,
 				AB586FBC1A174A3E00E8D00E /* BLIPickerView.m in Sources */,
 				AB586FC61A17502200E8D00E /* AppDelegate.m in Sources */,
+				7575C9271CBD2177001564FD /* HTTPRequestGenerator.m in Sources */,
 				75731EF61C56AF9100330424 /* BLILandingViewController.m in Sources */,
 				AB586FBA1A174A3E00E8D00E /* BLICheckInViewController.m in Sources */,
 				755CFFA11C59A2F500C13FD0 /* Lunch.m in Sources */,
@@ -524,6 +547,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB586F9E1A173F8300E8D00E /* BlinchTests.m in Sources */,
+				7575C9241CBD14A4001564FD /* APIClientTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
