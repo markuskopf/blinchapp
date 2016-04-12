@@ -22,20 +22,48 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
-/*
-    // TODO: tob uncomment to set reminder notifications on Wednesday > see below
-    // notifcation foo
-    [self configureNotifications];
-    [NSThread sleepForTimeInterval:2];
+    application.applicationIconBadgeNumber = 0;
     
-    NSLog(@"didFinishLaunchingWithOptions called");
-*/
+    UIMutableUserNotificationAction *readAction = [[UIMutableUserNotificationAction alloc] init];
+    readAction.identifier = @"READ_IDENTIFIER";
+    readAction.title = @"Read";
+    readAction.activationMode = UIUserNotificationActivationModeForeground;
+    readAction.destructive = NO;
+    readAction.authenticationRequired = YES;
     
-    // Handle launching from a notification
-    UILocalNotification *localNotif = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
-    if (localNotif) {
-        NSLog(@"Recieved Notification %@",localNotif);
+    UIMutableUserNotificationAction *ignoreAction = [[UIMutableUserNotificationAction alloc] init];
+    ignoreAction.identifier = @"IGNORE_IDENTIFIER";
+    ignoreAction.title = @"Ignore";
+    ignoreAction.activationMode = UIUserNotificationActivationModeBackground;
+    ignoreAction.destructive = NO;
+    ignoreAction.authenticationRequired = NO;
+    
+    UIMutableUserNotificationAction *deleteAction = [[UIMutableUserNotificationAction alloc] init];
+    deleteAction.identifier = @"DELETE_IDENTIFIER";
+    deleteAction.title = @"Delete";
+    deleteAction.activationMode = UIUserNotificationActivationModeForeground;
+    deleteAction.destructive = YES;
+    deleteAction.authenticationRequired = YES;
+    
+    UIMutableUserNotificationCategory *messageCategory = [[UIMutableUserNotificationCategory alloc] init];
+    messageCategory.identifier = @"MESSAGE_CATEGORY";
+    [messageCategory setActions:@[readAction, ignoreAction, deleteAction] forContext:UIUserNotificationActionContextDefault];
+    [messageCategory setActions:@[readAction, deleteAction] forContext:UIUserNotificationActionContextMinimal];
+    
+    NSSet *categories = [NSSet setWithObject:messageCategory];
+    
+    UIUserNotificationType types = UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert;
+    UIUserNotificationSettings *mySettings = [UIUserNotificationSettings settingsForTypes:types categories:categories];
+    
+    [[UIApplication sharedApplication] registerForRemoteNotifications];
+    [[UIApplication sharedApplication] registerUserNotificationSettings:mySettings];
+    
+    if(launchOptions!=nil){
+        NSString *msg = [NSString stringWithFormat:@"%@", launchOptions];
+        NSLog(@"%@",msg);
+        [self createAlert:msg];
     }
+
     
     [self coreDataTestMethod];
     
@@ -98,6 +126,45 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+#pragma mark - Push notification handlings
+
+- (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken{
+    NSLog(@"deviceToken: %@", deviceToken);
+}
+
+
+- (void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)error{
+    NSLog(@"Failed to register with error : %@", error);
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    application.applicationIconBadgeNumber = 0;
+    NSString *msg = [NSString stringWithFormat:@"%@", userInfo];
+    NSLog(@"%@",msg);
+    [self createAlert:msg];
+}
+
+- (void)createAlert:(NSString *)msg {
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Message Received" message:[NSString stringWithFormat:@"%@", msg]delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alertView show];
+}
+
+- (void)application:(UIApplication *) application handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)notification completionHandler:(void (^)())completionHandler {
+    
+    if ([identifier isEqualToString:@"READ_IDENTIFIER"]){
+        NSString *msg = [NSString stringWithFormat:@"%@", @"read"];
+        [self createAlert:msg];
+    }else if ([identifier isEqualToString:@"DELETE_IDENTIFIER"]){
+        NSString *msg = [NSString stringWithFormat:@"%@", @"delete"];
+        [self createAlert:msg];
+    }
+    
+    completionHandler();
+}
+
 
 #pragma mark - Calling notifications for Wed
 

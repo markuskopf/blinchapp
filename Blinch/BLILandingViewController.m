@@ -45,7 +45,7 @@
     
     
     
-    _url =  [NSURL URLWithString:@"http://192.168.0.13:8082/api/v1/history"];
+    _url =  [NSURL URLWithString:@"http://192.168.0.12:8080/api/v1/history"];
     NSString *authValue = @"Basic a29wZi5tYXJrdXNAYmxpbmNoYXBwLmNvbToxMjM0NTY3OA==";
     
     _request = [[NSMutableURLRequest alloc] initWithURL:self.url];
