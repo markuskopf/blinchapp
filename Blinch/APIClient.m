@@ -58,7 +58,6 @@ static NSString * const APIClientEndpointHistory = @"api/v1/history";
                                             delegateQueue:_queue];
         
         _httpRequestGenerator = [[HTTPRequestGenerator alloc] initWithEndpointURL:[NSURL URLWithString:DevHost]];
-        
     }
     
     return self;
@@ -72,12 +71,12 @@ static NSString * const APIClientEndpointHistory = @"api/v1/history";
         assert(completionHandler);
     }
     
+    NSString *base64AuthValue = [self createBasicAuthValueWith:password name:name];
     
-    NSString *authValue = @"Basic a29wZi5tYXJrdXNAYmxpbmNoYXBwLmNvbToxMjM0NTY3OA==";
     NSMutableURLRequest *request = [self.httpRequestGenerator requestWithPath:APIClientEndpointHistory
                                                                        method:@"GET"
                                                                    parameters:nil
-                                                                    authValue:authValue];
+                                                                    authValue:base64AuthValue];
     
     NSURLSessionDataTask *dataTask = [self.session dataTaskWithRequest:request
                                                      completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
@@ -95,5 +94,13 @@ static NSString * const APIClientEndpointHistory = @"api/v1/history";
     [dataTask resume];
 }
 
+- (NSString *)createBasicAuthValueWith:(NSString *)password name:(NSString *)name
+{
+    NSString *plainTextAuthValue = [NSString stringWithFormat:@"%@:%@", name, password];
+    NSData *plainData = [plainTextAuthValue dataUsingEncoding:NSUTF8StringEncoding];
+    NSString *base64String = [plainData base64EncodedStringWithOptions:1];
+    NSString *base64AuthValue = [NSString stringWithFormat:@"Basic %@", base64String];
+    return base64AuthValue;
+}
 
 @end

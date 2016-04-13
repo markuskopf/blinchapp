@@ -54,9 +54,12 @@
                          password:@"12345678"
                 completionHandler:^(NSDictionary *response, NSDictionary *meta, NSError *error) {
         
-        XCTAssertNil(error, @"Error during login...");
+                    XCTAssertNil(error, @"Error during login...");
+                
+                    if (response != nil) {
+                        [expectation fulfill];
+                    }
         
-        [expectation fulfill];
     }];
     
     [self waitForExpectationsWithTimeout:1.0 handler:nil];
