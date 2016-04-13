@@ -52,7 +52,7 @@
     
     [_apiClient loginWithUserName:@"kopf.markus@blinchapp.com"
                          password:@"12345678"
-                completionHandler:^(NSDictionary *response, NSDictionary *meta, NSError *error) {
+                completionHandler:^(NSDictionary *response, NSError *error) {
         
                     XCTAssertNil(error, @"Error during login...");
                 

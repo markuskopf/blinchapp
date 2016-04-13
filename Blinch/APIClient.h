@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^LoginCompletionHandler)(NSDictionary *response, NSError *error);
+
 @interface APIClient : NSObject
 
 @property(nonatomic, strong, readonly) NSOperationQueue *queue;
@@ -16,7 +18,7 @@
 
 - (void)loginWithUserName:(NSString *)name
                  password:(NSString *)password
-        completionHandler:(void (^)(NSDictionary *response, NSDictionary *meta, NSError *error))completionHandler;
+        completionHandler:(LoginCompletionHandler)completionHandler;
 
 
 @end

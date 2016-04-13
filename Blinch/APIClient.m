@@ -65,7 +65,7 @@ static NSString * const APIClientEndpointHistory = @"api/v1/history";
 
 - (void)loginWithUserName:(NSString *)name
                  password:(NSString *)password
-        completionHandler:(void (^)(NSDictionary *response, NSDictionary *meta, NSError *error))completionHandler {
+        completionHandler:(LoginCompletionHandler)completionHandler {
     
     if (completionHandler == nil) {
         assert(completionHandler);
@@ -81,14 +81,39 @@ static NSString * const APIClientEndpointHistory = @"api/v1/history";
     NSURLSessionDataTask *dataTask = [self.session dataTaskWithRequest:request
                                                      completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
                                                          
-                                                         NSError *jsonError = nil;
-                                                         id returnValue = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&jsonError];
+                                                         
+                                                         NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+                                                         NSInteger httpStatus = httpResponse.statusCode;
+                                                         NSLog(@"HTTPStatusCode: %tu", httpStatus);
                                                          
                                                          if (error != nil) {
-                                                             completionHandler(returnValue, nil, error);
+                                                             NSLog(@"Error sending API description: %@", error);
+                                                             
+                                                             NSDictionary *responseDict = nil;
+                                                             NSError *JSONError;
+                                                             responseDict = [NSJSONSerialization JSONObjectWithData:data
+                                                                                                            options:0
+                                                                                                              error:&JSONError];
+                                                            
+                                                             if (responseDict == nil) {
+                                                                 NSLog(@"Error creating dictionary from JSON data: %@", JSONError);
+                                                             }
+                                                             
+                                                             dispatch_async(dispatch_get_main_queue(), ^{
+                                                                 completionHandler(responseDict, error);
+                                                             });
                                                          } else {
-                                                             completionHandler(returnValue, nil, error);
+                                                             NSDictionary *responseDict = nil;
+                                                             NSError *JSONError = nil;
+                                                             responseDict = [NSJSONSerialization JSONObjectWithData:data
+                                                                                                            options:NSJSONReadingMutableContainers
+                                                                                                              error:&JSONError];
+                                                             
+                                                             dispatch_async(dispatch_get_main_queue(), ^{
+                                                                 completionHandler(responseDict, error);
+                                                             });
                                                          }
+                                                  
     }];
     
     [dataTask resume];
