@@ -71,7 +71,7 @@ static NSString * const APIClientEndpointHistory = @"api/v1/history";
         assert(completionHandler);
     }
     
-    NSString *base64AuthValue = [self createBasicAuthValueWith:password name:name];
+    NSString *base64AuthValue = [self createBasicAuthValueBase64EncodedWith:password name:name];
     
     NSMutableURLRequest *request = [self.httpRequestGenerator requestWithPath:APIClientEndpointHistory
                                                                        method:@"GET"
@@ -94,7 +94,7 @@ static NSString * const APIClientEndpointHistory = @"api/v1/history";
     [dataTask resume];
 }
 
-- (NSString *)createBasicAuthValueWith:(NSString *)password name:(NSString *)name
+- (NSString *)createBasicAuthValueBase64EncodedWith:(NSString *)password name:(NSString *)name
 {
     NSString *plainTextAuthValue = [NSString stringWithFormat:@"%@:%@", name, password];
     NSData *plainData = [plainTextAuthValue dataUsingEncoding:NSUTF8StringEncoding];
