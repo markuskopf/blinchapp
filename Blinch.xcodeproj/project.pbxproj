@@ -26,6 +26,7 @@
 		7575C9221CBD1321001564FD /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7575C9211CBD1321001564FD /* APIClient.m */; };
 		7575C9241CBD14A4001564FD /* APIClientTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7575C9231CBD14A4001564FD /* APIClientTest.m */; };
 		7575C9271CBD2177001564FD /* HTTPRequestGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7575C9261CBD2177001564FD /* HTTPRequestGenerator.m */; };
+		7575C92D1CBE8C49001564FD /* BlinchErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7575C92C1CBE8C49001564FD /* BlinchErrors.m */; };
 		AB586F841A173F8200E8D00E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB586F831A173F8200E8D00E /* main.m */; };
 		AB586F8F1A173F8200E8D00E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB586F8E1A173F8200E8D00E /* Images.xcassets */; };
 		AB586F921A173F8200E8D00E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB586F901A173F8200E8D00E /* LaunchScreen.xib */; };
@@ -101,6 +102,8 @@
 		7575C9231CBD14A4001564FD /* APIClientTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClientTest.m; sourceTree = "<group>"; };
 		7575C9251CBD2177001564FD /* HTTPRequestGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRequestGenerator.h; sourceTree = "<group>"; };
 		7575C9261CBD2177001564FD /* HTTPRequestGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRequestGenerator.m; sourceTree = "<group>"; };
+		7575C92B1CBE8C49001564FD /* BlinchErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlinchErrors.h; sourceTree = "<group>"; };
+		7575C92C1CBE8C49001564FD /* BlinchErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlinchErrors.m; sourceTree = "<group>"; };
 		AB586F7E1A173F8200E8D00E /* Blinch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blinch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB586F821A173F8200E8D00E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB586F831A173F8200E8D00E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -249,6 +252,8 @@
 				7575C9211CBD1321001564FD /* APIClient.m */,
 				7575C9251CBD2177001564FD /* HTTPRequestGenerator.h */,
 				7575C9261CBD2177001564FD /* HTTPRequestGenerator.m */,
+				7575C92B1CBE8C49001564FD /* BlinchErrors.h */,
+				7575C92C1CBE8C49001564FD /* BlinchErrors.m */,
 			);
 			name = "API Client";
 			sourceTree = "<group>";
@@ -532,6 +537,7 @@
 				75731EFB1C56B44F00330424 /* BLILoginViewController.m in Sources */,
 				AB586FAB1A17495100E8D00E /* BLIHistoryTableViewController.m in Sources */,
 				755CFF9E1C59A2F500C13FD0 /* LunchPartner+CoreDataProperties.m in Sources */,
+				7575C92D1CBE8C49001564FD /* BlinchErrors.m in Sources */,
 				AB586FBD1A174A3E00E8D00E /* BLILotteryViewController.m in Sources */,
 				AB586FBB1A174A3E00E8D00E /* BLIDrawPartnerViewController.m in Sources */,
 				755CFF881C59A11700C13FD0 /* Blinch.xcdatamodeld in Sources */,

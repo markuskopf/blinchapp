@@ -8,6 +8,7 @@
 
 #import "APIClient.h"
 #import "HTTPRequestGenerator.h"
+#import "BlinchErrors.h"
 
 /**
  * Development host.
@@ -81,11 +82,9 @@ static NSString * const APIClientEndpointHistory = @"api/v1/history";
     NSURLSessionDataTask *dataTask = [self.session dataTaskWithRequest:request
                                                      completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
                                                          
-                                                         
-                                                         NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
-                                                         NSInteger httpStatus = httpResponse.statusCode;
-                                                         NSLog(@"HTTPStatusCode: %tu", httpStatus);
-                                                         
+                                                         NSInteger httpStatus = [self httpStatusCode:response];
+                                                         NSLog(@"Body: %@",[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+                       
                                                          if (error != nil) {
                                                              NSLog(@"Error sending API description: %@", error);
                                                              
@@ -108,9 +107,13 @@ static NSString * const APIClientEndpointHistory = @"api/v1/history";
                                                              responseDict = [NSJSONSerialization JSONObjectWithData:data
                                                                                                             options:NSJSONReadingMutableContainers
                                                                                                               error:&JSONError];
+                                                             NSError *customError;
+                                                             if (httpStatus != 200) {
+                                                                customError = ErrorWithCode(httpStatus, error);
+                                                             }
                                                              
                                                              dispatch_async(dispatch_get_main_queue(), ^{
-                                                                 completionHandler(responseDict, error);
+                                                                 completionHandler(responseDict, customError);
                                                              });
                                                          }
                                                   
@@ -126,6 +129,17 @@ static NSString * const APIClientEndpointHistory = @"api/v1/history";
     NSString *base64String = [plainData base64EncodedStringWithOptions:1];
     NSString *base64AuthValue = [NSString stringWithFormat:@"Basic %@", base64String];
     return base64AuthValue;
+}
+
+- (NSInteger)httpStatusCode:(NSURLResponse *)response
+{
+    NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+    NSDictionary* responseHeaders = httpResponse.allHeaderFields;
+    NSLog(@"all response header fields: %@",responseHeaders);
+    NSInteger httpStatus = httpResponse.statusCode;
+    NSLog(@"HTTPStatusCode: %tu", httpStatus);
+    
+    return httpStatus;
 }
 
 @end

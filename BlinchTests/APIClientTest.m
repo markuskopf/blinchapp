@@ -20,7 +20,6 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
     
     self.queue = [[NSOperationQueue alloc] init];
     self.queue.maxConcurrentOperationCount = 1;
@@ -29,13 +28,10 @@
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    self.apiClient = nil;
+    self.queue = nil;
+    
     [super tearDown];
-}
-
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
 }
 
 - (void)testAPIClientInitialization {
@@ -47,23 +43,33 @@
 }
 
 - (void)testHistoryEndpoint {
-    
     XCTestExpectation *expectation = [self expectationWithDescription:@"history endpoint"];
     
     [_apiClient loginWithUserName:@"kopf.markus@blinchapp.com"
                          password:@"12345678"
                 completionHandler:^(NSDictionary *response, NSError *error) {
-        
                     XCTAssertNil(error, @"Error during login...");
-                
                     if (response != nil) {
                         [expectation fulfill];
                     }
-        
     }];
     
     [self waitForExpectationsWithTimeout:1.0 handler:nil];
+}
+
+- (void)testWrongCredentials {
+    XCTestExpectation *expectation = [self expectationWithDescription:@"history endpoint"];
     
+    [_apiClient loginWithUserName:@"kopf.markus@blinchapp.com"
+                         password:@"123456789"
+                completionHandler:^(NSDictionary *response, NSError *error) {
+                    XCTAssertTrue(error.code == 401);
+                    if (error.code == 401) {
+                        [expectation fulfill];
+                    }
+                }];
+    
+    [self waitForExpectationsWithTimeout:1.0 handler:nil];
 }
 
 @end
