@@ -9,7 +9,7 @@
 #import "BlinchErrors.h"
 
 NSError *ErrorWithCode(NSInteger code, NSError *underlyingError) {
-
+    
     NSString *description = nil;
     switch (code) {
         case BlinchUnauthorizedError:

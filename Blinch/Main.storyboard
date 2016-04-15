@@ -134,7 +134,7 @@
                                     <constraint firstAttribute="width" constant="360" id="w6a-pK-h28"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="done"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="ZXd-hN-f8o"/>
@@ -150,7 +150,7 @@
                                     <constraint firstAttribute="height" constant="50" id="ohC-Oj-7Ru"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="ohC-Oj-7Ru"/>
@@ -166,8 +166,7 @@
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <action selector="loginPressed:" destination="uur-Zt-3G3" eventType="touchUpInside" id="BGN-wV-KGn"/>
-                                    <action selector="sendRegistrationDetailsButton:" destination="Van-Vk-cAZ" eventType="touchUpInside" id="yw8-Ta-XHz"/>
+                                    <action selector="loginPressed:" destination="uur-Zt-3G3" eventType="touchUpInside" id="MSi-BZ-JIE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -186,8 +185,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="4QX-pG-4Vi" kind="show" identifier="BLILoginProcessSegue" id="jhY-iO-EPU"/>
+                        <outlet property="passwordTextField" destination="PGy-az-NrT" id="Eah-rT-wLi"/>
+                        <outlet property="userNameTextField" destination="k3C-VL-jAM" id="EP1-LK-5wS"/>
                         <segue destination="ZMM-zB-hDH" kind="show" identifier="BLICheckinSegue" id="VHZ-0s-zyC"/>
+                        <segue destination="4QX-pG-4Vi" kind="show" identifier="BLILoginProcessSegue" id="bE3-tj-4ao"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="imO-C7-e6M" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -231,6 +232,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="DZx-b7-me8" id="AvR-My-1tt"/>
                         <outlet property="logginInLabel" destination="we0-zM-hUV" id="YJ5-pA-N9h"/>
                     </connections>
                 </viewController>
