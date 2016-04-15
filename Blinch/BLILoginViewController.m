@@ -12,6 +12,10 @@
 
 @interface BLILoginViewController () <BLILoginProcessViewControllerDelegate>
 
+@property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
+
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+
 @end
 
 @implementation BLILoginViewController
@@ -34,14 +38,21 @@
     if ([segue.identifier isEqualToString:BLILoginProcessSegue]) {
         BLILoginProcessViewController *destinationViewController = (BLILoginProcessViewController*)segue.destinationViewController;
         destinationViewController.delegate = self;
+        destinationViewController.apiClient = self.apiClient;
+        destinationViewController.username = self.userNameTextField.text;
+        destinationViewController.password = self.passwordTextField.text;
     }
 
 }
 
-
 - (IBAction)loginPressed:(id)sender {
-     [self performSegueWithIdentifier:BLILoginProcessSegue sender:nil];
     
+    if (self.userNameTextField.text.length > 0 &&
+        self.passwordTextField.text.length > 0) {
+        [self performSegueWithIdentifier:BLILoginProcessSegue sender:self];
+    }
+    
+    // TODO: Show information since required data is missing. Enable login button only when all data is complete.
 }
 
 #pragma mark - BLILoginProcessViewController

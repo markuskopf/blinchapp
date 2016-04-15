@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "APIClient.h"
 
 @interface BLILoginViewController : UIViewController
+
+@property(nonatomic, weak) APIClient *apiClient;
 
 @end

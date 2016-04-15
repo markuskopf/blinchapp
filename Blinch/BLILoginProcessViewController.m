@@ -11,6 +11,7 @@
 @interface BLILoginProcessViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *logginInLabel;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @end
 
@@ -22,12 +23,14 @@
     
     
     self.navigationItem.hidesBackButton = YES;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     
-    [NSTimer scheduledTimerWithTimeInterval:2.0
-                                     target:self
-                                   selector:@selector(timerCall)
-                                   userInfo:nil
-                                    repeats:NO];
+    [self.activityIndicator startAnimating];
+    
+    [self loginWithUsername:self.username password:self.password];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,21 +48,26 @@
 }
 */
 
-- (void)timerCall {
-    if ([self.delegate conformsToProtocol:@protocol(BLILoginProcessViewControllerDelegate)]) {
-        [self.delegate loginViewControllerDidFinish:(BLILoginViewController*)self.delegate];
-    }
+//- (void)timerCall {
+//    if ([self.delegate conformsToProtocol:@protocol(BLILoginProcessViewControllerDelegate)]) {
+//        [self.delegate loginViewControllerDidFinish:(BLILoginViewController*)self.delegate];
+//    }
+//
+//}
+
+- (void)loginWithUsername:(NSString *)username password:(NSString *)password {
+  
+    BLILoginProcessViewController * __weak weakSelf = self;
+    
+    [self.apiClient loginWithUserName:self.username password:self.password completionHandler:^(NSDictionary *response, NSError *error) {
+        
+        if ([self.delegate conformsToProtocol:@protocol(BLILoginProcessViewControllerDelegate)]) {
+            [self.delegate loginViewControllerDidFinish:(BLILoginViewController*)self.delegate];
+            
+            [weakSelf.activityIndicator stopAnimating];
+        }
+        
+    }];
 
 }
-
-
-- (void)loginWithUser:(NSString *)user password:(NSString *)password {
-    
-    if ([self.delegate conformsToProtocol:@protocol(BLILoginProcessViewControllerDelegate)]) {
-        [self.delegate loginViewControllerDidFinish:(BLILoginViewController*)self.delegate];
-    }
-    
-}
-
-
 @end

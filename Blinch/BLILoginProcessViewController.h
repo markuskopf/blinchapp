@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "APIClient.h"
 @class BLILoginViewController;
 
 @protocol BLILoginProcessViewControllerDelegate <NSObject>
@@ -26,5 +27,9 @@
 @interface BLILoginProcessViewController : UIViewController
 
 @property (weak, nonatomic) id<BLILoginProcessViewControllerDelegate> delegate;
+
+@property (weak, nonatomic) APIClient *apiClient;
+@property (copy, nonatomic) NSString *username;
+@property (copy, nonatomic) NSString *password;
 
 @end
