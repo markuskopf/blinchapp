@@ -22,7 +22,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self controllerConfiguration];
+}
+
+- (void)controllerConfiguration {
+    
+    // if test environment
+    self.userNameTextField.text = @"kopf.markus@blinchapp.com";
+    self.passwordTextField.text = @"12345678";
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -68,7 +77,31 @@
  * highlights errors arising from the login process.
  */
 - (void)loginDidFailWithError:(NSError *)error {
-    
+    [self presentAlertViewWithError:error];
+}
+
+#pragma mark - Login error
+
+- (void)presentAlertViewWithError:(NSError *)error {
+    if([[UIDevice currentDevice].systemVersion floatValue] < 8.0){
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Login Error" message:error.localizedDescription delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alertView show];
+    } else {
+        UIAlertController *alertViewController = [UIAlertController alertControllerWithTitle:@"Login Error" message:error.localizedDescription preferredStyle:UIAlertControllerStyleAlert];
+        __weak typeof(self)weakSelf = self;
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            [weakSelf.navigationController popViewControllerAnimated:YES];
+        }];
+        [alertViewController addAction:okAction];
+        
+        [self presentViewController:alertViewController animated:YES completion:nil];
+    }
+}
+
+#pragma mark - AlertViewDelegate
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 

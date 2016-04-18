@@ -18,7 +18,7 @@ static NSString * const DevHost = @"http://192.168.0.12:8080/";
 /**
  * Endpoint path for history resource.
  */
-static NSString * const APIClientEndpointHistory = @"api/v1/history";
+static NSString * const APIClientEndpointHistory = @"user";
 
 
 

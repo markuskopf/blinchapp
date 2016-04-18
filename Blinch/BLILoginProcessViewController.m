@@ -57,17 +57,20 @@
 
 - (void)loginWithUsername:(NSString *)username password:(NSString *)password {
   
-    BLILoginProcessViewController * __weak weakSelf = self;
+    __weak typeof(self) weakSelf = self;
     
     [self.apiClient loginWithUserName:self.username password:self.password completionHandler:^(NSDictionary *response, NSError *error) {
         
         if ([self.delegate conformsToProtocol:@protocol(BLILoginProcessViewControllerDelegate)]) {
-            [self.delegate loginViewControllerDidFinish:(BLILoginViewController*)self.delegate];
+            if (error) {
+                [self.delegate loginDidFailWithError:error];
+            } else {
+                [self.delegate loginViewControllerDidFinish:(BLILoginViewController*)self.delegate];
+            }
             
             [weakSelf.activityIndicator stopAnimating];
         }
-        
     }];
-
 }
+
 @end
